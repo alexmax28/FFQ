@@ -156,7 +156,7 @@ body {
 }
 
 
-.jump3a,.jump4a,.jump11a,.jump12a,.jump15a,.jump18a,.jump21a,.jump24a,.jump25a,.jump26a,.select35_1,.select35_2,.select35_3,.select36_1,.select36_2,.select36_3{
+.jump2a,.jump3a,.jump4a,.jump11a,.jump12a,.jump15a,.jump18a,.jump21a,.jump24a,.jump25a,.jump26a,.select35_1,.select35_2,.select35_3,.select36_1,.select36_2,.select36_3{
 	display:none;
 	animation-name:show;
 	animation-duration:3s;
