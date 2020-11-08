@@ -156,7 +156,7 @@ body {
 }
 
 
-.jump3a,.jump4a,.jump11a,.jump12a,.jump15a,.jump18a,.jump21a,.jump24a,.jump25a,.jump26a{
+.jump2a,.jump3a,.jump4a,.jump11a,.jump12a,.jump15a,.jump18a,.jump21a,.jump22a,.jump24a,.jump25a,.jump26a{
 	display:none;
 	animation-name:show;
 	animation-duration:3s;

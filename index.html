@@ -10,517 +10,581 @@
 <body>
     <div id="app">
         <form id="msform">
+          <!-- 1 -->
             <fieldset>
               <h2 class="fs-title h2style">1.請問您通常多久喝一次可樂、汽水、運動飲料、巧克力飲料、非 100％的加工果汁、冬瓜茶等含糖冷熱飲料？</h2>
-              <input type="radio" name="no1" value="1"/><span>(1) 都沒喝或一個月喝不到 1 次</span><br>
-              <input type="radio" name="no1" value="2"/><span>(2) 一個月喝 1-3 次</span><br>
-              <input type="radio" name="no1" value="3"/><span>(3) 每星期喝 1-2 次</span><br>
-              <input type="radio" name="no1" value="4"/><span>(4) 每星期喝 3-4 次</span><br>
-              <input type="radio" name="no1" value="5"/><span>(5) 每星期喝 5-6 次</span><br>
+              <input type="radio" name="Q01" value="1" id="Q01_1" /><label for="Q01_1">(1) 都沒喝或一個月喝不到 1 次</label><br>
+              <input type="radio" name="Q01" value="2" id="Q01_2"/><label for="Q01_2">(2) 一個月喝 1-3 次</label><br>
+              <input type="radio" name="Q01" value="3" id="Q01_3"/><label for="Q01_3">(3) 每星期喝 1-2 次</label><br>
+              <input type="radio" name="Q01" value="4" id="Q01_4"/><label for="Q01_4">(4) 每星期喝 3-4 次</label><br>
+              <input type="radio" name="Q01" value="5" id="Q01_5"/><label for="Q01_5">(5) 每星期喝 5-6 次</label><br>
               <input type="button" name="next" class="next action-button 1btn" value="Next" disabled='true'/>
             </fieldset>
             <!-- 2 -->
             <fieldset>
               <h2 class="fs-title h2style">2. 請問您通常多久喝一次咖啡？</h2>
-              <input type="radio" name="no2" value="1"/><span>(1) 都沒喝或一個月喝不到 1 次</span><br>
-              <input type="radio" name="no2" value="1"/><span>(2) 一個月喝 1-3 次</span><br>
-              <input type="radio" name="no2" value="1"/><span>(3) 每星期喝 1-2 次</span><br>
-              <input type="radio" name="no2" value="1"/><span>(4) 每星期喝 3-4 次</span><br>
-              <input type="radio" name="no2" value="1"/><span>(5) 每星期喝 5-6 次</span><br>
+              <input type="radio" name="Q02" id="Q02_1" onclick='close2a()' value="1"/><label for="Q02_1">(1) 都沒喝或一個月喝不到 1 次</label><br>
+              <input type="radio" name="Q02" id="Q02_2" onclick="open2a()" value="1"/><label for="Q02_2">(2) 一個月喝 1-3 次</label><br>
+              <input type="radio" name="Q02" id="Q02_3" onclick="open2a()" value="1"/><label for="Q02_3">(3) 每星期喝 1-2 次</label><br>
+              <input type="radio" name="Q02" id="Q02_4" onclick="open2a()" value="1"/><label for="Q02_4">(4) 每星期喝 3-4 次</label><br>
+              <input type="radio" name="Q02" id="Q02_5" onclick="open2a()" value="1"/><label for="Q02_5">(5) 每星期喝 5-6 次</label><br>
+              <div class="jump2a">
+                <br>
+              <h2 class="fs-title h2style " >2a. 請問您喝的咖啡是否加奶精（三合一咖啡算是有加奶精）？</h2><br>
+              <input type="radio" name="q02a" id="Q02a_1"/><label for="Q02a_1">(1) 總是加奶精</label><br>
+              <input type="radio" name="q02a" id="Q02a_2"/><label for="Q02a_2">(2) 大多會加奶精</label><br>
+              <input type="radio" name="q02a" id="Q02a_3"/><label for="Q02a_3">(3) 一半一半</label><br>
+              <input type="radio" name="q02a" id="Q02a_4"/><label for="Q02a_4">(4) 少數會加奶精</label><br>
+              <input type="radio" name="q02a" id="Q02a_5"/><label for="Q02a_5">(5) 都不加奶精</label><br>
+              <br>
+              <h2 class="fs-title h2style">2b. 請問您喝的咖啡是否是低咖啡因咖啡？</h2><br>
+              <input type="radio" name="q02b" id="Q02b_1"/><label for="Q02b_1">(1) 總是</label><br>
+              <input type="radio" name="q02b" id="Q02b_2"/><label for="Q02b_2">(2) 大多是</label><br>
+              <input type="radio" name="q02b" id="Q02b_3"/><label for="Q02b_3">(3) 一半一半</label><br>
+              <input type="radio" name="q02b" id="Q02b_4"/><label for="Q02b_4">(4) 少數是</label><br>
+              <input type="radio" name="q02b" id="Q02b_5"/><label for="Q02b_5">(5) 都不是</label><br>
+              <br>
+              <h2 class="fs-title h2style">2c. 請問您喝的咖啡是甜的嗎？</h2><br>
+              <label><input type="radio" name="q02c" />(1) 總是甜的 </label><br>
+              <label><input type="radio" name="q02c" />(2) 大多是甜的 </label><br>
+              <label><input type="radio" name="q02c" />(3) 一半一半 </label><br>
+              <label><input type="radio" name="q02c" />(4) 少數是甜的 </label><br>
+              <label><input type="radio" name="q02c" />(5) 都不是甜的 </label><br>
+            </div>
+
               <input type="button" name="previous" class="previous action-button" value="previous" />
               <input type="button" name="next" class="next action-button 2btn" value="Next" disabled='true' />
             </fieldset>
+
+            
             <!-- 3 -->
             <fieldset>
               <h2 class="fs-title h2style">3. 請問您通常多久喝一次茶或各式奶茶？</h2>
-              <input type="radio" name="no3" class="no3" onclick='close3a()'value="0"/><span>(1) 都沒喝或一個月喝不到 1 次</span><br>
-              <input type="radio" name="no3" class="no3" onclick="open3a()" value="3a"/><span>(2) 一個月喝 1-3 次</span><br>
-              <input type="radio" name="no3" class="no3" onclick="open3a()" value="3a"/><span>(3) 每星期喝 1-2 次</span><br>
-              <input type="radio" name="no3" class="no3" onclick="open3a()" value="3a"/><span>(4) 每星期喝 3-4 次</span><br>
-              <input type="radio" name="no3" class="no3" onclick="open3a()" value="3a"/><span>(5) 每星期喝 5-6 次</span><br>
+              <label><input type="radio" name="q03" class="no3" onclick='close3a()'value="0"/>(1) 都沒喝或一個月喝不到 1 次</label><br>
+              <label><input type="radio" name="q03" class="no3" onclick="open3a()" value="3a"/>(2) 一個月喝 1-3 次</label><br>
+              <label><input type="radio" name="q03" class="no3" onclick="open3a()" value="3a"/>(3) 每星期喝 1-2 次</label><br>
+              <label><input type="radio" name="q03" class="no3" onclick="open3a()" value="3a"/>(4) 每星期喝 3-4 次</label><br>
+              <label><input type="radio" name="q03" class="no3" onclick="open3a()" value="3a"/>(5) 每星期喝 5-6 次</label><br>
               <!-- 3A -->
               <div class="jump3a">
                 <br>
               <h2 class="fs-title h2style " >3a. 請問您喝的茶是否加奶精？<br>
-                <span class="ps">（如果您喝的是加鮮奶的鮮奶茶，此題請選擇不加奶精。從鮮奶茶喝到鮮奶的頻率與份量請回答在第21題：請問您通常多久喝一杯牛奶？）</span></h2>
-              <input type="radio" name="no3a" /><span>(1) 總是加奶精</span><br>
-              <input type="radio" name="no3a" /><span>(2) 大多會加奶精</span><br>
-              <input type="radio" name="no3a" /><span>(3) 一半一半</span><br>
-              <input type="radio" name="no3a" /><span>(4) 少數會加奶精</span><br>
-              <input type="radio" name="no3a" /><span>(5) 都不加奶精</span><br>
+                <label class="ps">（如果您喝的是加鮮奶的鮮奶茶，此題請選擇不加奶精。從鮮奶茶喝到鮮奶的頻率與份量請回答在第21題：請問您通常多久喝一杯牛奶？）</label></h2>
+              <label><input type="radio" name="no3a" />(1) 總是加奶精</label><br>
+              <label><input type="radio" name="no3a" />(2) 大多會加奶精</label><br>
+              <label><input type="radio" name="no3a" />(3) 一半一半</label><br>
+              <label><input type="radio" name="no3a" />(4) 少數會加奶精</label><br>
+              <label><input type="radio" name="no3a" />(5) 都不加奶精</label><br>
               <br>
               <h2 class="fs-title h2style">3b. 請問您喝的茶或奶茶是甜的嗎？<br>
-                <span class="ps">（如果您喝的是加鮮奶的鮮奶茶，此題請選擇不加奶精。從鮮奶茶喝到鮮奶的頻率與份量請回答在第21題：請問您通常多久喝一杯牛奶？）</span></h2>
-              <input type="radio" name="no3b" /><span>(1) 總是甜的</span><br>
-              <input type="radio" name="no3b" /><span>(2) 大多是甜的</span><br>
-              <input type="radio" name="no3b" /><span>(3) 一半一半</span><br>
-              <input type="radio" name="no3b" /><span>(4) 少數是甜的</span><br>
-              <input type="radio" name="no3b" /><span>(5) 都不是甜的</span><br>
+                <label class="ps">（如果您喝的是加鮮奶的鮮奶茶，此題請選擇不加奶精。從鮮奶茶喝到鮮奶的頻率與份量請回答在第21題：請問您通常多久喝一杯牛奶？）</label></h2>
+              <label><input type="radio" name="no3b" />(1) 總是甜的</label><br>
+              <label><input type="radio" name="no3b" />(2) 大多是甜的</label><br>
+              <label><input type="radio" name="no3b" />(3) 一半一半</label><br>
+              <label><input type="radio" name="no3b" />(4) 少數是甜的</label><br>
+              <label><input type="radio" name="no3b" />(5) 都不是甜的</label><br>
             </div>
             <input type="button" name="previous" class="previous action-button" value="previous" />
-            <input type="button" name="next" class="next action-button" value="Next" />
+            <input type="button" name="next" class="next action-button 3btn" value="Next"  disabled='true'/>
           </fieldset>
           <!-- 4 -->
           <fieldset>
             <h2 class="fs-title h2style">4. 請問您通常多久喝一次豆漿、蜜豆奶、米漿、五穀漿或植物奶等？</h2>
-             <input type="radio" name="no4" onclick="close4a()" /><span>(1) 都沒喝或一個月喝不到 1 次</span><br>
-             <input type="radio" name="no4" onclick="open4a()" /><span>(2) 一個月喝 1-3 次</span><br>
-             <input type="radio" name="no4" onclick="open4a()" /><span>(3) 每星期喝 1-2 次</span><br>
-             <input type="radio" name="no4" onclick="open4a()" /><span>(4) 每星期喝 3-4 次</span><br>
-             <input type="radio" name="no4" onclick="open4a()" /><span>(5) 每星期喝 5-6 次</span><br>
+             <label><input type="radio" name="q04" onclick="close4a()" />(1) 都沒喝或一個月喝不到 1 次</label><br>
+             <label><input type="radio" name="q04" onclick="open4a()" />(2) 一個月喝 1-3 次</label><br>
+             <label><input type="radio" name="q04" onclick="open4a()" />(3) 每星期喝 1-2 次</label><br>
+             <label><input type="radio" name="q04" onclick="open4a()" />(4) 每星期喝 3-4 次</label><br>
+             <label><input type="radio" name="q04" onclick="open4a()" />(5) 每星期喝 5-6 次</label><br>
     
              <!-- 4a -->
              <div class="jump4a">
               <br>
              <h2 class="fs-title h2style " >4a. 豆奶、米漿、五穀漿或植物奶是甜的嗎？<br>
-               <span class="ps">（如果您喝的是加鮮奶的鮮奶茶，此題請選擇不加奶精。從鮮奶茶喝到鮮奶的頻率與份量請回答在第21題：請問您通常多久喝一杯牛奶？）</span></h2>
-            <input type="radio" name="no4a" /><span>(1) 總是甜的</span><br>
-            <input type="radio" name="no4a" /><span>(2) 大多是甜的</span><br>
-            <input type="radio" name="no4a" /><span>(3) 一半一半</span><br>
-            <input type="radio" name="no4a" /><span>(4) 少數是甜的</span><br>
-            <input type="radio" name="no4a" /><span>(5) 都不是甜的</span><br>
+               <label class="ps">（如果您喝的是加鮮奶的鮮奶茶，此題請選擇不加奶精。從鮮奶茶喝到鮮奶的頻率與份量請回答在第21題：請問您通常多久喝一杯牛奶？）</label></h2>
+            <label><input type="radio" name="no4a" />(1) 總是甜的</label><br>
+            <label><input type="radio" name="no4a" />(2) 大多是甜的</label><br>
+            <label><input type="radio" name="no4a" />(3) 一半一半</label><br>
+            <label><input type="radio" name="no4a" />(4) 少數是甜的</label><br>
+            <label><input type="radio" name="no4a" />(5) 都不是甜的</label><br>
             <br>
             </div>          
             <input type="button" name="previous" class="previous action-button" value="previous" />
-            <input type="button" name="next" class="next action-button" value="Next" />
+            <input type="button" name="next" class="next action-button 4btn" value="Next"  disabled='true'/>
            </fieldset>
            <!-- 5 -->
            <fieldset>
             <h2 class="fs-title h2style">5. 請問您通常多久吃一次洋芋片、薯條、薯餅及其他袋裝零食等？</h2>
-            <input type="radio" name="no5" /><span>(1) 都沒吃或一個月吃不到 1 次</span><br>
-            <input type="radio" name="no5" /><span>(2) 一個月吃 1-3 次</span><br>
-            <input type="radio" name="no5" /><span>(3) 每星期吃 1-2 次</span><br>
-            <input type="radio" name="no5" /><span>(4) 每星期吃 3-4 次</span><br>
-            <input type="radio" name="no5" /><span>(5) 每星期吃 5-6 次</span><br>
+            <label><input type="radio" name="q05" />(1) 都沒吃或一個月吃不到 1 次</label><br>
+            <label><input type="radio" name="q05" />(2) 一個月吃 1-3 次</label><br>
+            <label><input type="radio" name="q05" />(3) 每星期吃 1-2 次</label><br>
+            <label><input type="radio" name="q05" />(4) 每星期吃 3-4 次</label><br>
+            <label><input type="radio" name="q05" />(5) 每星期吃 5-6 次</label><br>
             <input type="button" name="previous" class="previous action-button" value="previous" />
-            <input type="button" name="next" class="next action-button" value="Next" />
+            <input type="button" name="next" class="next action-button 5btn" value="Next"  disabled='true'/>
           </fieldset>
           <!-- 6 -->
           <fieldset>
             <h2 class="fs-title h2style">6. 請問您通常多久吃一次漢堡、披薩或鹹的三明治等？</h2>
-            <input type="radio" name="no6" /><span>(1) 都沒吃或一個月吃不到 1 次</span><br>
-            <input type="radio" name="no6" /><span>(2) 一個月吃 1-3 次</span><br>
-            <input type="radio" name="no6" /><span>(3) 每星期吃 1-2 次</span><br>
-            <input type="radio" name="no6" /><span>(4) 每星期吃 3-4 次</span><br>
-            <input type="radio" name="no6" /><span>(5) 每星期吃 5-6 次</span><br>
+            <label><input type="radio" name="q06" />(1) 都沒吃或一個月吃不到 1 次</label><br>
+            <label><input type="radio" name="q06" />(2) 一個月吃 1-3 次</label><br>
+            <label><input type="radio" name="q06" />(3) 每星期吃 1-2 次</label><br>
+            <label><input type="radio" name="q06" />(4) 每星期吃 3-4 次</label><br>
+            <label><input type="radio" name="q06" />(5) 每星期吃 5-6 次</label><br>
             <input type="button" name="previous" class="previous action-button" value="previous" />
-            <input type="button" name="next" class="next action-button" value="Next" />
+            <input type="button" name="next" class="next action-button 6btn" value="Next"  disabled='true'/>
           </fieldset>
           <!-- 7 -->
           <fieldset>
             <h2 class="fs-title h2style">7. 請問您通常多久吃一次餅乾、小西點、糕餅、蛋糕、甜甜圈、鬆餅等澱粉 做的零食類？</h2>
-            <input type="radio" name="no7" /><span>(1) 都沒吃或一個月吃不到 1 次</span><br>
-            <input type="radio" name="no7" /><span>(2) 一個月吃 1-3 次</span><br>
-            <input type="radio" name="no7" /><span>(3) 每星期吃 1-2 次</span><br>
-            <input type="radio" name="no7" /><span>(4) 每星期吃 3-4 次</span><br>
-            <input type="radio" name="no7" /><span>(5) 每星期吃 5-6 次</span><br>
+            <label><input type="radio" name="q07" />(1) 都沒吃或一個月吃不到 1 次</label><br>
+            <label><input type="radio" name="q07" />(2) 一個月吃 1-3 次</label><br>
+            <label><input type="radio" name="q07" />(3) 每星期吃 1-2 次</label><br>
+            <label><input type="radio" name="q07" />(4) 每星期吃 3-4 次</label><br>
+            <label><input type="radio" name="q07" />(5) 每星期吃 5-6 次</label><br>
             <input type="button" name="previous" class="previous action-button" value="previous" />
-            <input type="button" name="next" class="next action-button" value="Next" />
+            <input type="button" name="next" class="next action-button 7btn" value="Next"  disabled='true'/>
           </fieldset>
           <!-- 8 -->
           <fieldset>
             <h2 class="fs-title h2style">8. 請問您通常多久吃一次紅豆、綠豆、薏仁等乾豆類食物？</h2>
-            <input type="radio" name="no8" /><span>(1) 都沒吃或一個月吃不到 1 次</span><br>
-            <input type="radio" name="no8" /><span>(2) 一個月吃 1-3 次</span><br>
-            <input type="radio" name="no8" /><span>(3) 每星期吃 1-2 次</span><br>
-            <input type="radio" name="no8" /><span>(4) 每星期吃 3-4 次</span><br>
-            <input type="radio" name="no8" /><span>(5) 每星期吃 5-6 次</span><br>
+            <label><input type="radio" name="q08" />(1) 都沒吃或一個月吃不到 1 次</label><br>
+            <label><input type="radio" name="q08" />(2) 一個月吃 1-3 次</label><br>
+            <label><input type="radio" name="q08" />(3) 每星期吃 1-2 次</label><br>
+            <label><input type="radio" name="q08" />(4) 每星期吃 3-4 次</label><br>
+            <label><input type="radio" name="q08" />(5) 每星期吃 5-6 次</label><br>
             <input type="button" name="previous" class="previous action-button" value="previous" />
-            <input type="button" name="next" class="next action-button" value="Next" />
+            <input type="button" name="next" class="next action-button 8btn" value="Next" disabled='true'/>
           </fieldset>
           <!-- 9 -->
           <fieldset>
             <h2 class="fs-title h2style">9. 請問您通常多久吃一次地瓜、芋頭、馬鈴薯、玉米、菱角等澱粉類食物？</h2>
-            <input type="radio" name="no9" /><span>(1) 都沒吃或一個月吃不到 1 次</span><br>
-            <input type="radio" name="no9" /><span>(2) 一個月吃 1-3 次</span><br>
-            <input type="radio" name="no9" /><span>(3) 每星期吃 1-2 次</span><br>
-            <input type="radio" name="no9" /><span>(4) 每星期吃 3-4 次</span><br>
-            <input type="radio" name="no9" /><span>(5) 每星期吃 5-6 次</span><br>
+            <label><input type="radio" name="q09" />(1) 都沒吃或一個月吃不到 1 次</label><br>
+            <label><input type="radio" name="q09" />(2) 一個月吃 1-3 次</label><br>
+            <label><input type="radio" name="q09" />(3) 每星期吃 1-2 次</label><br>
+            <label><input type="radio" name="q09" />(4) 每星期吃 3-4 次</label><br>
+            <label><input type="radio" name="q09" />(5) 每星期吃 5-6 次</label><br>
             <input type="button" name="previous" class="previous action-button" value="previous" />
-            <input type="button" name="next" class="next action-button" value="Next" />
+            <input type="button" name="next" class="next action-button 9btn" value="Next" disabled='true'/>
           </fieldset>
           <!-- 10 -->
           <fieldset>
             <h2 class="fs-title h2style">10. 請問您通常多久吃一次黃豆或黃豆製品？ <br>
-              <span class="ps">（例如豆腐、豆乾、油豆腐、素料、等）</span></h2>
-            <input type="radio" name="no10" /><span>(1) 都沒吃或一個月吃不到 1 次</span><br>
-            <input type="radio" name="no10" /><span>(2) 一個月吃 1-3 次</span><br>
-            <input type="radio" name="no10" /><span>(3) 每星期吃 1-2 次</span><br>
-            <input type="radio" name="no10" /><span>(4) 每星期吃 3-4 次</span><br>
-            <input type="radio" name="no10" /><span>(5) 每星期吃 5-6 次</span><br>
+              <label class="ps">（例如豆腐、豆乾、油豆腐、素料、等）</label></h2>
+            <label><input type="radio" name="q10" />(1) 都沒吃或一個月吃不到 1 次</label><br>
+            <label><input type="radio" name="q10" />(2) 一個月吃 1-3 次</label><br>
+            <label><input type="radio" name="q10" />(3) 每星期吃 1-2 次</label><br>
+            <label><input type="radio" name="q10" />(4) 每星期吃 3-4 次</label><br>
+            <label><input type="radio" name="q10" />(5) 每星期吃 5-6 次</label><br>
             <input type="button" name="previous" class="previous action-button" value="previous" />
-            <input type="button" name="next" class="next action-button" value="Next" />
+            <input type="button" name="next" class="next action-button 10btn" value="Next" disabled='true'/>
           </fieldset>
           <!-- 11 -->
           <fieldset>
             <h2 class="fs-title h2style">11. 請問您通常多久吃一次雞、鴨、鵝等家禽肉類？</h2>
-            <input type="radio" name="no11" onclick="close11a()"/><span>(1) 都沒吃或一個月吃不到 1 次</span><br>
-            <input type="radio" name="no11" onclick="open11a()"/><span>(2) 一個月吃 1-3 次</span><br>
-            <input type="radio" name="no11" onclick="open11a()"/><span>(3) 每星期吃 1-2 次</span><br>
-            <input type="radio" name="no11" onclick="open11a()"/><span>(4) 每星期吃 3-4 次</span><br>
-            <input type="radio" name="no11" onclick="open11a()"/><span>(5) 每星期吃 5-6 次</span><br>
+            <label><input type="radio" name="q11" onclick="close11a()"/>(1) 都沒吃或一個月吃不到 1 次</label><br>
+            <label><input type="radio" name="q11" onclick="open11a()"/>(2) 一個月吃 1-3 次</label><br>
+            <label><input type="radio" name="q11" onclick="open11a()"/>(3) 每星期吃 1-2 次</label><br>
+            <label><input type="radio" name="q11" onclick="open11a()"/>(4) 每星期吃 3-4 次</label><br>
+            <label><input type="radio" name="q11" onclick="open11a()"/>(5) 每星期吃 5-6 次</label><br>
             <!-- 11a -->
             <div class="jump11a">
               <br>
              <h2 class="fs-title h2style " >11a. 請問您吃家禽肉類的時候是否吃皮？</h2>
-            <input type="radio" name="no11a" /><span>(1) 都不吃皮</span><br>
-            <input type="radio" name="no11a" /><span>(2) 少數吃皮</span><br>
-            <input type="radio" name="no11a" /><span>(3) 一半一半</span><br>
-            <input type="radio" name="no11a" /><span>(4) 多會吃皮</span><br>
-            <input type="radio" name="no11a" /><span>(5) 總是吃皮</span><br>
+            <label><input type="radio" name="q11a" />(1) 都不吃皮</label><br>
+            <label><input type="radio" name="q11a" />(2) 少數吃皮</label><br>
+            <label><input type="radio" name="q11a" />(3) 一半一半</label><br>
+            <label><input type="radio" name="q11a" />(4) 多會吃皮</label><br>
+            <label><input type="radio" name="q11a" />(5) 總是吃皮</label><br>
             <br>
             </div>       
             <input type="button" name="previous" class="previous action-button" value="previous" />
-            <input type="button" name="next" class="next action-button" value="Next" />
+            <input type="button" name="next" class="next action-button 11btn" value="Next" disabled='true'/>
           </fieldset>
           <!-- 12 -->
           <fieldset>
             <h2 class="fs-title h2style">12. 請問您通常多久吃一次牛、羊、豬等家畜肉類？</h2>
-            <input type="radio" name="no12" onclick="close12a()"/><span>(1) 都沒吃或一個月吃不到 1 次</span><br>
-            <input type="radio" name="no12" onclick="open12a()"/><span>(2) 一個月吃 1-3 次</span><br>
-            <input type="radio" name="no12" onclick="open12a()"/><span>(3) 每星期吃 1-2 次</span><br>
-            <input type="radio" name="no12" onclick="open12a()"/><span>(4) 每星期吃 3-4 次</span><br>
-            <input type="radio" name="no12" onclick="open12a()"/><span>(5) 每星期吃 5-6 次</span><br>
+            <label><input type="radio" name="q12" onclick="close12a()"/>(1) 都沒吃或一個月吃不到 1 次</label><br>
+            <label><input type="radio" name="q12" onclick="open12a()"/>(2) 一個月吃 1-3 次</label><br>
+            <label><input type="radio" name="q12" onclick="open12a()"/>(3) 每星期吃 1-2 次</label><br>
+            <label><input type="radio" name="q12" onclick="open12a()"/>(4) 每星期吃 3-4 次</label><br>
+            <label><input type="radio" name="q12" onclick="open12a()"/>(5) 每星期吃 5-6 次</label><br>
             <!-- 12a -->
             <div class="jump12a">
               <br>
              <h2 class="fs-title h2style " >12a. 請問您吃的家畜肉類是？</h2>
-            <input type="radio" name="no12a" /><span>(1) 全是五花肉</span><br>
-            <input type="radio" name="no12a" /><span>(2) 多是五花肉</span><br>
-            <input type="radio" name="no12a" /><span>(3) 一半一半</span><br>
-            <input type="radio" name="no12a" /><span>(4) 多是瘦肉</span><br>
-            <input type="radio" name="no12a" /><span>(5) 全是瘦肉</span><br>
+            <label><input type="radio" name="q12a" />(1) 全是五花肉</label><br>
+            <label><input type="radio" name="q12a" />(2) 多是五花肉</label><br>
+            <label><input type="radio" name="q12a" />(3) 一半一半</label><br>
+            <label><input type="radio" name="q12a" />(4) 多是瘦肉</label><br>
+            <label><input type="radio" name="q12a" />(5) 全是瘦肉</label><br>
             <br>
             </div>      
             <input type="button" name="previous" class="previous action-button" value="previous" />
-            <input type="button" name="next" class="next action-button" value="Next" />
+            <input type="button" name="next" class="next action-button 12btn" value="Next" disabled='true'/>
           </fieldset>
           <!-- 13 -->
           <fieldset>
             <h2 class="fs-title h2style">13. 請問您通常多久吃一次內臟類？<br>
-              <span class="ps">（例如豬肝、腰子、腸子、牛肚、雞胗等）</span></h2>
-            <input type="radio" name="no13" /><span>(1) 都沒吃或一個月吃不到 1 次</span><br>
-            <input type="radio" name="no13" /><span>(2) 一個月吃 1-3 次</span><br>
-            <input type="radio" name="no13" /><span>(3) 每星期吃 1-2 次</span><br>
-            <input type="radio" name="no13" /><span>(4) 每星期吃 3-4 次</span><br>
-            <input type="radio" name="no13" /><span>(5) 每星期吃 5-6 次</span><br>
+              <label class="ps">（例如豬肝、腰子、腸子、牛肚、雞胗等）</label></h2>
+            <label><input type="radio" name="q13" />(1) 都沒吃或一個月吃不到 1 次</label><br>
+            <label><input type="radio" name="q13" />(2) 一個月吃 1-3 次</label><br>
+            <label><input type="radio" name="q13" />(3) 每星期吃 1-2 次</label><br>
+            <label><input type="radio" name="q13" />(4) 每星期吃 3-4 次</label><br>
+            <label><input type="radio" name="q13" />(5) 每星期吃 5-6 次</label><br>
             <input type="button" name="previous" class="previous action-button" value="previous" />
-            <input type="button" name="next" class="next action-button" value="Next" />
+            <input type="button" name="next" class="next action-button 13btn" value="Next" disabled='true'/>
           </fieldset>
           <!-- 14 -->
           <fieldset>
             <h2 class="fs-title h2style">14. 請問您通常多久吃一次魚類或魚罐頭？</h2>
-            <input type="radio" name="no14" /><span>(1) 都沒吃或一個月吃不到 1 次</span><br>
-            <input type="radio" name="no14" /><span>(2) 一個月吃 1-3 次</span><br>
-            <input type="radio" name="no14" /><span>(3) 每星期吃 1-2 次</span><br>
-            <input type="radio" name="no14" /><span>(4) 每星期吃 3-4 次</span><br>
-            <input type="radio" name="no14" /><span>(5) 每星期吃 5-6 次</span><br>
+            <label><input type="radio" name="q14" />(1) 都沒吃或一個月吃不到 1 次</label><br>
+            <label><input type="radio" name="q14" />(2) 一個月吃 1-3 次</label><br>
+            <label><input type="radio" name="q14" />(3) 每星期吃 1-2 次</label><br>
+            <label><input type="radio" name="q14" />(4) 每星期吃 3-4 次</label><br>
+            <label><input type="radio" name="q14" />(5) 每星期吃 5-6 次</label><br>
             <input type="button" name="previous" class="previous action-button" value="previous" />
-            <input type="button" name="next" class="next action-button" value="Next" />
+            <input type="button" name="next" class="next action-button 14btn" value="Next" disabled='true'/>
           </fieldset>
           <!-- 15 -->
           <fieldset>
             <h2 class="fs-title h2style">15. 請問您通常多久吃一次魚以外的各式海鮮類？<br>
-              <span class="ps">（如花枝、蛤蜊、蝦、螃蟹）</span></h2>
-            <input type="radio" name="no15" onclick="close15a()"/><span>(1) 都沒吃或一個月吃不到 1 次</span><br>
-            <input type="radio" name="no15" onclick="open15a()"/><span>(2) 一個月吃 1-3 次</span><br>
-            <input type="radio" name="no15" onclick="open15a()"/><span>(3) 每星期吃 1-2 次</span><br>
-            <input type="radio" name="no15" onclick="open15a()"/><span>(4) 每星期吃 3-4 次</span><br>
-            <input type="radio" name="no15" onclick="open15a()"/><span>(5) 每星期吃 5-6 次</span><br>
+              <label class="ps">（如花枝、蛤蜊、蝦、螃蟹）</label></h2>
+            <label><input type="radio" name="q15" onclick="close15a()"/>(1) 都沒吃或一個月吃不到 1 次</label><br>
+            <label><input type="radio" name="q15" onclick="open15a()"/>(2) 一個月吃 1-3 次</label><br>
+            <label><input type="radio" name="q15" onclick="open15a()"/>(3) 每星期吃 1-2 次</label><br>
+            <label><input type="radio" name="q15" onclick="open15a()"/>(4) 每星期吃 3-4 次</label><br>
+            <label><input type="radio" name="q15" onclick="open15a()"/>(5) 每星期吃 5-6 次</label><br>
             <!-- 15a -->
             <div class="jump15a">
               <br>
-             <h2 class="fs-title h2style " >15a. 請問您常吃的海鮮類是？<span class="ps">（可複選）</span></h2>
-            <input type="checkbox" name="no15a" value="01"/><span>(01)花枝/烏賊/魷魚/小管/章魚類</span><br>
-            <input type="checkbox" name="no15a" value="02"/><span>(02)蛤蜊/蜆/海瓜子類</span><br>
-            <input type="checkbox" name="no15a" value="03"/><span>(03)牡蠣/蚵</span><br>
-            <input type="checkbox" name="no15a" value="04"/><span>(04)蝦子</span><br>
-            <input type="checkbox" name="no15a" value="05"/><span>(05)蝦米</span><br>
-            <input type="checkbox" name="no15a" value="06"/><span>(06)螃蟹</span><br>
-            <input type="checkbox" name="no15a" value="07"/><span>(07)干貝</span><br>
-            <input type="checkbox" name="no15a" value="08"/><span>(08)螺類</span><br>
-            <input type="checkbox" name="no15a" value="09"/><span>(09)鮑魚</span><br>
-            <input type="checkbox" name="no15a" value="10"/><span>(10)龍蝦</span><br>
-            <input type="checkbox" name="no15a" value="11"/><span>(11)蝸牛肉</span><br>
+             <h2 class="fs-title h2style " >15a. 請問您常吃的海鮮類是？<label class="ps">（可複選）</label></h2>
+            <label><input type="checkbox" name="q15a_01" value="01"/>(01)花枝/烏賊/魷魚/小管/章魚類</label><br>
+            <label><input type="checkbox" name="q15a_02" value="02"/>(02)蛤蜊/蜆/海瓜子類</label><br>
+            <label><input type="checkbox" name="q15a_03" value="03"/>(03)牡蠣/蚵</label><br>
+            <label><input type="checkbox" name="q15a_04" value="04"/>(04)蝦子</label><br>
+            <label><input type="checkbox" name="q15a_05" value="05"/>(05)蝦米</label><br>
+            <label><input type="checkbox" name="q15a_06" value="06"/>(06)螃蟹</label><br>
+            <label><input type="checkbox" name="q15a_07" value="07"/>(07)干貝</label><br>
+            <label><input type="checkbox" name="q15a_08" value="08"/>(08)螺類</label><br>
+            <label><input type="checkbox" name="q15a_09" value="09"/>(09)鮑魚</label><br>
+            <label><input type="checkbox" name="q15a_10" value="10"/>(10)龍蝦</label><br>
+            <label><input type="checkbox" name="q15a_11" value="11"/>(11)蝸牛肉</label><br>
             <br>
             </div>    
             <input type="button" name="previous" class="previous action-button" value="previous" />
-            <input type="button" name="next" class="next action-button" value="Next" />
+            <input type="button" name="next" class="next action-button 15btn" value="Next" disabled='true'/>
           </fieldset>
           <!-- 16 -->
           <fieldset>
             <h2 class="fs-title h2style">16. 請問您通常多久吃一次貢丸、魚丸、火鍋餃、甜不辣等魚漿肉漿加工食品？</h2>
-            <input type="radio" name="no16" /><span>(1) 都沒吃或一個月吃不到 1 次</span><br>
-            <input type="radio" name="no16" /><span>(2) 一個月吃 1-3 次</span><br>
-            <input type="radio" name="no16" /><span>(3) 每星期吃 1-2 次</span><br>
-            <input type="radio" name="no16" /><span>(4) 每星期吃 3-4 次</span><br>
-            <input type="radio" name="no16" /><span>(5) 每星期吃 5-6 次</span><br>
+            <label><input type="radio" name="q16"/>(1) 都沒吃或一個月吃不到 1 次</label><br>
+            <label><input type="radio" name="q16"/>(2) 一個月吃 1-3 次</label><br>
+            <label><input type="radio" name="q16"/>(3) 每星期吃 1-2 次</label><br>
+            <label><input type="radio" name="q16"/>(4) 每星期吃 3-4 次</label><br>
+            <label><input type="radio" name="q16"/>(5) 每星期吃 5-6 次</label><br>
             <input type="button" name="previous" class="previous action-button" value="previous" />
-            <input type="button" name="next" class="next action-button" value="Next" />
+            <input type="button" name="next" class="next action-button 16btn" value="Next" disabled='true'/>
           </fieldset>
           <!-- 17 -->
           <fieldset>
             <h2 class="fs-title h2style">17. 請問您通常多久吃一次香腸、火腿、培根、肉鬆等肉類加工食品？</h2>
-            <input type="radio" name="no17" /><span>(1) 都沒吃或一個月吃不到 1 次</span><br>
-            <input type="radio" name="no17" /><span>(2) 一個月吃 1-3 次</span><br>
-            <input type="radio" name="no17" /><span>(3) 每星期吃 1-2 次</span><br>
-            <input type="radio" name="no17" /><span>(4) 每星期吃 3-4 次</span><br>
-            <input type="radio" name="no17" /><span>(5) 每星期吃 5-6 次</span><br>
+            <label><input type="radio" name="q17"/>(1) 都沒吃或一個月吃不到 1 次</label><br>
+            <label><input type="radio" name="q17"/>(2) 一個月吃 1-3 次</label><br>
+            <label><input type="radio" name="q17"/>(3) 每星期吃 1-2 次</label><br>
+            <label><input type="radio" name="q17"/>(4) 每星期吃 3-4 次</label><br>
+            <label><input type="radio" name="q17"/>(5) 每星期吃 5-6 次</label><br>
             <input type="button" name="previous" class="previous action-button" value="previous" />
-            <input type="button" name="next" class="next action-button" value="Next" />
+            <input type="button" name="next" class="next action-button 17btn" value="Next" disabled='true'/>
           </fieldset>
           <!-- 18 -->
           <fieldset>
             <h2 class="fs-title h2style">18. 請問您通常多久吃一次堅果類？<br>
-              <span class="ps">（如花生、芝麻、瓜子、腰果、杏仁、核桃 等）</span></h2>
-            <input type="radio" name="no18" onclick="close18a()"/><span>(1) 都沒吃或一個月吃不到 1 次</span><br>
-            <input type="radio" name="no18" onclick="open18a()"/><span>(2) 一個月吃 1-3 次</span><br>
-            <input type="radio" name="no18" onclick="open18a()"/><span>(3) 每星期吃 1-2 次</span><br>
-            <input type="radio" name="no18" onclick="open18a()"/><span>(4) 每星期吃 3-4 次</span><br>
-            <input type="radio" name="no18" onclick="open18a()"/><span>(5) 每星期吃 5-6 次</span><br>
+              <label class="ps">（如花生、芝麻、瓜子、腰果、杏仁、核桃 等）</label></h2>
+            <label><input type="radio" name="q18" onclick="close18a()"/>(1) 都沒吃或一個月吃不到 1 次</label><br>
+            <label><input type="radio" name="q18" onclick="open18a()"/>(2) 一個月吃 1-3 次</label><br>
+            <label><input type="radio" name="q18" onclick="open18a()"/>(3) 每星期吃 1-2 次</label><br>
+            <label><input type="radio" name="q18" onclick="open18a()"/>(4) 每星期吃 3-4 次</label><br>
+            <label><input type="radio" name="q18" onclick="open18a()"/>(5) 每星期吃 5-6 次</label><br>
             <!-- 18a -->
             <div class="jump18a">
               <br>
-             <h2 class="fs-title h2style " >15a. 請問您常吃的海鮮類是？<span class="ps">（可複選）</span></h2>
-            <input type="checkbox" name="no18a" value="01"/><span>(01)花生</span><br>
-            <input type="checkbox" name="no18a" value="02"/><span>(02)芝麻</span><br>
-            <input type="checkbox" name="no18a" value="03"/><span>(03)黑瓜子</span><br>
-            <input type="checkbox" name="no18a" value="04"/><span>(04)白瓜子</span><br>
-            <input type="checkbox" name="no18a" value="05"/><span>(05)葵瓜子</span><br>
-            <input type="checkbox" name="no18a" value="06"/><span>(06)腰果</span><br>
-            <input type="checkbox" name="no18a" value="07"/><span>(07)杏仁果</span><br>
-            <input type="checkbox" name="no18a" value="08"/><span>(08)開心果</span><br>
-            <input type="checkbox" name="no18a" value="09"/><span>(09)核桃</span><br>
+             <h2 class="fs-title h2style " >15a. 請問您常吃的海鮮類是？<label class="ps">（可複選）</label></h2>
+            <label><input type="checkbox" name="q18a_01" value="01"/>(01)花生</label><br>
+            <label><input type="checkbox" name="q18a_02" value="02"/>(02)芝麻</label><br>
+            <label><input type="checkbox" name="q18a_03" value="03"/>(03)黑瓜子</label><br>
+            <label><input type="checkbox" name="q18a_04" value="04"/>(04)白瓜子</label><br>
+            <label><input type="checkbox" name="q18a_05" value="05"/>(05)葵瓜子</label><br>
+            <label><input type="checkbox" name="q18a_06" value="06"/>(06)腰果</label><br>
+            <label><input type="checkbox" name="q18a_07" value="07"/>(07)杏仁果</label><br>
+            <label><input type="checkbox" name="q18a_08" value="08"/>(08)開心果</label><br>
+            <label><input type="checkbox" name="q18a_09" value="09"/>(09)核桃</label><br>
             <br>
             </div>    
             <input type="button" name="previous" class="previous action-button" value="previous" />
-            <input type="button" name="next" class="next action-button" value="Next" />
+            <input type="button" name="next" class="next action-button 18btn" value="Next" disabled='true'/>
           </fieldset>
-          <!-- 19 -->
+          <!-- 19***************** -->
           <fieldset>
             <h2 class="fs-title h2style">19. 請問您通常多久吃一個水果？<br>
-              <span class="ps">（請將您吃的各種水果加總，當份量與一個網球大小差不都，即為吃到一個水果）</span></h2>
-              <input type="radio" name="no19" /><span>(1) 每天吃 </span><input type="number" name="no19t" /><span>個</span><br>
-              <input type="radio" name="no19" /><span>(2) 每星期吃 </span><input type="number" name="no19t" /><span>個</span><br>
-              <input type="radio" name="no19" /><span>(3) 每月吃 </span><input type="number" name="no19t" /><span>個</span><br>
-              <input type="radio" name="no19" /><span>(4) 都沒吃或一個月吃不到一個 </span><br>
+              <label class="ps">（請將您吃的各種水果加總，當份量與一個網球大小差不都，即為吃到一個水果）</label></h2>
+              <label><input type="radio" name="q19"/>(1) 每天吃 </label><input type="number" name="q19_1" /><label>個</label><br>
+              <label><input type="radio" name="q19"/>(2) 每星期吃 </label><input type="number" name="q19_2" /><label>個</label><br>
+              <label><input type="radio" name="q19"/>(3) 每月吃 </label><input type="number" name="q19_3" /><label>個</label><br>
+              <label><input type="radio" name="q19"/>(4) 都沒吃或一個月吃不到一個 </label><br>
               <input type="button" name="previous" class="previous action-button" value="previous" />
-            <input type="button" name="next" class="next action-button" value="Next" />
+            <input type="button" name="next" class="next action-button 19btn" value="Next" disabled='true'/>
           </fieldset>
-          <!-- 20 -->
+          <!-- 20***************** -->
           <fieldset>
             <h2 class="fs-title h2style">20. 請問您通常多久吃一大湯匙的蔬菜？<br>
-              <span class="ps">（包含葉菜類、筍類、瓜果類、菇類、豆類、根莖蔬菜類、海產蔬菜類等）</span><br>
-              <span class="ps">（大湯匙：自助餐用打菜的大湯匙，一大湯匙 = 半飯碗）</span><br></h2>
-              <input type="radio" name="no20" /><span>(1) 每天吃 </span><input type="number" name="no20t" /><span>大湯匙</span><br>
-              <input type="radio" name="no20" /><span>(2) 每星期吃 </span><input type="number" name="no20t" /><span>大湯匙</span><br>
-              <input type="radio" name="no20" /><span>(3) 每月吃 </span><input type="number" name="no20t" /><span>大湯匙</span><br>
-              <input type="radio" name="no20" /><span>(4) 都沒吃或一個月吃不到一大湯匙 </span><br>
+              <label class="ps">（包含葉菜類、筍類、瓜果類、菇類、豆類、根莖蔬菜類、海產蔬菜類等）</label><br>
+              <label class="ps">（大湯匙：自助餐用打菜的大湯匙，一大湯匙 = 半飯碗）</label><br></h2>
+              <label><input type="radio" name="q20"/>(1) 每天吃 </label><input type="number" name="q20_1" /><label>大湯匙</label><br>
+              <label><input type="radio" name="q20"/>(2) 每星期吃 </label><input type="number" name="q20_2" /><label>大湯匙</label><br>
+              <label><input type="radio" name="q20"/>(3) 每月吃 </label><input type="number" name="q20_3" /><label>大湯匙</label><br>
+              <label><input type="radio" name="q20"/>(4) 都沒吃或一個月吃不到一大湯匙 </label><br>
               <input type="button" name="previous" class="previous action-button" value="previous" />
-            <input type="button" name="next" class="next action-button" value="Next" />
+            <input type="button" name="next" class="next action-button 20btn" value="Next" disabled='true'/>
           </fieldset>
-          <!-- 21 -->
+          <!-- 21***************** -->
           <fieldset>
             <h2 class="fs-title h2style">21. 請問您通常多久喝一杯牛奶、調味乳等？<br>
-              <span class="ps">（包括鮮奶、奶粉沖泡的奶類或拿鐵加的牛奶 都算）</span><br></h2>
-              <input type="radio" name="no21" onclick="open21a()"/><span>(1) 每天喝 </span><input type="number" name="no21t" /><span>杯</span><br>
-              <input type="radio" name="no21" onclick="open21a()"/><span>(2) 每星期喝 </span><input type="number" name="no21t" /><span>杯</span><br>
-              <input type="radio" name="no21" onclick="open21a()"/><span>(3) 每月喝 </span><input type="number" name="no21t" /><span>杯</span><br>
-              <input type="radio" name="no21" onclick="close21a()"/><span>(4) 都沒吃或一個月喝不到一杯 </span><br>
+              <label class="ps">（包括鮮奶、奶粉沖泡的奶類或拿鐵加的牛奶 都算）</label><br></h2>
+              <label><input type="radio" name="q21" onclick="open21a()"/>(1) 每天喝 </label><input type="number" name="q21_1"/><label>杯</label><br>
+              <label><input type="radio" name="q21" onclick="open21a()"/>(2) 每星期喝 </label><input type="number" name="q21_2"/><label>杯</label><br>
+              <label><input type="radio" name="q21" onclick="open21a()"/>(3) 每月喝 </label><input type="number" name="q21_3"/><label>杯</label><br>
+              <label><input type="radio" name="q21" onclick="close21a()"/>(4) 都沒吃或一個月喝不到一杯 </label><br>
               <!-- 21a -->
               <div class="jump21a">
                 <br>
-               <h2 class="fs-title h2style " >21a. 您喝的牛奶通常是？<span class="ps">（可複選）</span></h2>
-              <input type="checkbox" name="no21a" value="01"/><span>(1)脫脂</span><br>
-              <input type="checkbox" name="no21a" value="02"/><span>(2)低脂</span><br>
-              <input type="checkbox" name="no21a" value="03"/><span>(3)全脂</span><br>
+               <h2 class="fs-title h2style " >21a. 您喝的牛奶通常是？<label class="ps">（可複選）</label></h2>
+              <label><input type="checkbox" name="q21a" value="01"/>(1)脫脂</label><br>
+              <label><input type="checkbox" name="q21a" value="02"/>(2)低脂</label><br>
+              <label><input type="checkbox" name="q21a" value="03"/>(3)全脂</label><br>
               <br>
               </div>    
               <input type="button" name="previous" class="previous action-button" value="previous" />
-              <input type="button" name="next" class="next action-button" value="Next" />
+              <input type="button" name="next" class="next action-button 21btn" value="Next" disabled='true'/>
           </fieldset>
-          <!-- 22 -->
+          <!-- 22***************** -->
           <fieldset>
             <h2 class="fs-title h2style">22. 請問您通常多久喝一杯優格或優酪乳？<br>
-              <span class="ps">（一杯為 250 ㏄）</span><br></h2>
-              <input type="radio" name="no22" /><span>(1) 每天喝 </span><input type="number" name="no22t" /><span>杯</span><br>
-              <input type="radio" name="no22" /><span>(2) 每星期喝 </span><input type="number" name="no22t" /><span>杯</span><br>
-              <input type="radio" name="no22" /><span>(3) 每月喝 </span><input type="number" name="no22t" /><span>杯</span><br>
-              <input type="radio" name="no22" /><span>(4) 都沒喝或一個月喝不到一杯 </span><br>
+              <label class="ps">（一杯為 250 ㏄）</label><br></h2>
+              <label><input type="radio" name="q22" />(1) 每天喝 </label><input type="number" name="q22_1" /><label>杯</label><br>
+              <label><input type="radio" name="q22" />(2) 每星期喝 </label><input type="number" name="q22_2" /><label>杯</label><br>
+              <label><input type="radio" name="q22" />(3) 每月喝 </label><input type="number" name="q22_3" /><label>杯</label><br>
+              <label><input type="radio" name="q22" />(4) 都沒喝或一個月喝不到一杯 </label><br>
+              <!-- 22a -->
+              <div class="jump22a">
+                <br>
+               <h2 class="fs-title h2style " >21a. 您喝的牛奶通常是？<label class="ps">（可複選）</label></h2>
+              <label><input type="checkbox" name="q22a" value="01"/>(1)脫脂</label><br>
+              <label><input type="checkbox" name="q22a" value="01"/>(2)低脂</label><br>
+              <label><input type="checkbox" name="q22a" value="01"/>(3)全脂</label><br>
+              <br>
+              </div>    
               <input type="button" name="previous" class="previous action-button" value="previous" />
-              <input type="button" name="next" class="next action-button" value="Next" />
+              <input type="button" name="next" class="next action-button 22btn" value="Next" disabled='true'/>
           </fieldset>
           <!-- 23 -->
           <fieldset>
             <h2 class="fs-title h2style">23. 請問您通常多久吃一顆蛋？<br>
-              <span class="ps">（例如雞蛋、皮蛋、鹹蛋）</span><br></h2>
-              <input type="radio" name="no23" /><span>(1) 每天吃 </span><input type="number" name="no23t" /><span>顆</span><br>
-              <input type="radio" name="no23" /><span>(2) 每星期吃 </span><input type="number" name="no23t" /><span>顆</span><br>
-              <input type="radio" name="no23" /><span>(3) 每月吃 </span><input type="number" name="no23t" /><span>顆</span><br>
-              <input type="radio" name="no23" /><span>(4) 都沒吃或一個月吃不到一杯 </span><br>
+              <label class="ps">（例如雞蛋、皮蛋、鹹蛋）</label><br></h2>
+              <label><input type="radio" name="q23" />(1) 每天吃 </label><input type="number" name="q23_1" /><label>顆</label><br>
+              <label><input type="radio" name="q23" />(2) 每星期吃 </label><input type="number" name="q23_2" /><label>顆</label><br>
+              <label><input type="radio" name="q23" />(3) 每月吃 </label><input type="number" name="q23_3" /><label>顆</label><br>
+              <label><input type="radio" name="q23" />(4) 都沒吃或一個月吃不到一杯 </label><br>
               <input type="button" name="previous" class="previous action-button" value="previous" />
-              <input type="button" name="next" class="next action-button" value="Next" />
+              <input type="button" name="next" class="next action-button 23btn" value="Next" disabled='true'/>
           </fieldset>
           <!-- 24 -->
           <fieldset>
             <h2 class="fs-title h2style">24. 請問您通常每天吃幾碗飯或粥？<br>
-              <span class="ps">（例如白飯、糙米飯、炒飯、油飯、白粥、 廣東粥等）</span><br>
-              <span class="ps">（一碗飯約 200 克，一碗飯＝一便當盒的飯＝一碗自助餐大碗飯）</span><br></h2>
-              <input type="radio" name="no24" onclick="open24a()"/><span>(1) 每天吃 </span><input type="number" name="no24t" /><span>碗</span><br>
-              <input type="radio" name="no24" onclick="open24a()"/><span>(2) 每星期吃 </span><input type="number" name="no24t" /><span>碗</span><br>
-              <input type="radio" name="no24" onclick="open24a()"/><span>(3) 每月吃 </span><input type="number" name="no24t" /><span>碗</span><br>
-              <input type="radio" name="no24" onclick="close24a()"/><span>(4) 都沒吃或一個月吃不到一碗 </span><br>
+              <label class="ps">（例如白飯、糙米飯、炒飯、油飯、白粥、 廣東粥等）</label><br>
+              <label class="ps">（一碗飯約 200 克，一碗飯＝一便當盒的飯＝一碗自助餐大碗飯）</label><br></h2>
+              <label><input type="radio" name="q24" onclick="open24a()"/>(1) 每天吃 </label><input type="number" name="q24_1" /><label>碗</label><br>
+              <label><input type="radio" name="q24" onclick="open24a()"/>(2) 每星期吃 </label><input type="number" name="q24_2" /><label>碗</label><br>
+              <label><input type="radio" name="q24" onclick="open24a()"/>(3) 每月吃 </label><input type="number" name="q24_3" /><label>碗</label><br>
+              <label><input type="radio" name="q24" onclick="close24a()"/>(4) 都沒吃或一個月吃不到一碗 </label><br>
               <!-- 24a -->
               <div class="jump24a">
                 <br>
-               <h2 class="fs-title h2style " >24a. 請問您吃的飯是全穀的嗎？<span class="ps">（例如糙米飯、五穀飯）</span></h2>
-               <input type="radio" name="no24a" /><span>(1) 總是全穀的</span><br>
-               <input type="radio" name="no24a" /><span>(2) 大多是全穀的</span><br>
-               <input type="radio" name="no24a" /><span>(3) 一半一半</span><br>
-               <input type="radio" name="no24a" /><span>(4) 少數是全穀的</span><br>
-               <input type="radio" name="no24a" /><span>(5) 都不是全穀的</span><br>
+               <h2 class="fs-title h2style " >24a. 請問您吃的飯是全穀的嗎？<label class="ps">（例如糙米飯、五穀飯）</label></h2>
+               <label><input type="radio" name="q24a" />(1) 總是全穀的</label><br>
+               <label><input type="radio" name="q24a" />(2) 大多是全穀的</label><br>
+               <label><input type="radio" name="q24a" />(3) 一半一半</label><br>
+               <label><input type="radio" name="q24a" />(4) 少數是全穀的</label><br>
+               <label><input type="radio" name="q24a" />(5) 都不是全穀的</label><br>
               <br>
               </div>    
               <input type="button" name="previous" class="previous action-button" value="previous" />
-              <input type="button" name="next" class="next action-button" value="Next" />
+              <input type="button" name="next" class="next action-button 24btn" value="Next" disabled='true'/>
           </fieldset>
           <!-- 25 -->
           <fieldset>
             <h2 class="fs-title h2style">25. 請問您通常每天吃幾碗麵、麵線、米粉、冬粉、板條、速食麵等麵類？</h2>
-              <input type="radio" name="no25" onclick="open25a()"/><span>(1) 每天吃 </span><input type="number" name="no24t" /><span>碗</span><br>
-              <input type="radio" name="no25" onclick="open25a()"/><span>(2) 每星期吃 </span><input type="number" name="no24t" /><span>碗</span><br>
-              <input type="radio" name="no25" onclick="open25a()"/><span>(3) 每月吃 </span><input type="number" name="no24t" /><span>碗</span><br>
-              <input type="radio" name="no25" onclick="close25a()"/><span>(4) 都沒吃或一個月吃不到一碗 </span><br>
+              <label><input type="radio" name="q25" onclick="open25a()"/>(1) 每天吃 </label><input type="number" name="q25_1" /><label>碗</label><br>
+              <label><input type="radio" name="q25" onclick="open25a()"/>(2) 每星期吃 </label><input type="number" name="q25_2" /><label>碗</label><br>
+              <label><input type="radio" name="q25" onclick="open25a()"/>(3) 每月吃 </label><input type="number" name="q25_3" /><label>碗</label><br>
+              <label><input type="radio" name="q25" onclick="close25a()"/>(4) 都沒吃或一個月吃不到一碗 </label><br>
               <!-- 25a -->
               <div class="jump25a">
                 <br>
-               <h2 class="fs-title h2style " >25a. 請問您吃的麵類是全穀的嗎？<span class="ps">（例如全麥麵條、喬麥麵、山藥麵等）</span></h2>
-               <input type="radio" name="no25a" /><span>(1) 總是全穀的</span><br>
-               <input type="radio" name="no25a" /><span>(2) 大多是全穀的</span><br>
-               <input type="radio" name="no25a" /><span>(3) 一半一半</span><br>
-               <input type="radio" name="no25a" /><span>(4) 少數是全穀的</span><br>
-               <input type="radio" name="no25a" /><span>(5) 都不是全穀的</span><br>
+               <h2 class="fs-title h2style " >25a. 請問您吃的麵類是全穀的嗎？<label class="ps">（例如全麥麵條、喬麥麵、山藥麵等）</label></h2>
+               <label><input type="radio" name="q25a" />(1) 總是全穀的</label><br>
+               <label><input type="radio" name="q25a" />(2) 大多是全穀的</label><br>
+               <label><input type="radio" name="q25a" />(3) 一半一半</label><br>
+               <label><input type="radio" name="q25a" />(4) 少數是全穀的</label><br>
+               <label><input type="radio" name="q25a" />(5) 都不是全穀的</label><br>
               <br>
               </div>    
               <input type="button" name="previous" class="previous action-button" value="previous" />
-              <input type="button" name="next" class="next action-button" value="Next" />
+              <input type="button" name="next" class="next action-button 25btn" value="Next" disabled='true'/>
           </fieldset>
           <!-- 26 -->
           <fieldset>
             <h2 class="fs-title h2style">26. 請問通常您多久吃幾個（片）土司、麵包、饅頭、包子等？<br>
-              <span class="ps">(若只單吃一項，另一項請填0)</span></h2>
-              <input type="radio" name="no26" onclick="open26a()"/><span>(1) 每天吃 </span><input type="number" name="no26t1" class="input26"/><span>片吐司與</span></span><input type="number" name="no26t2" class="input26"/><span>個麵包、饅頭、包子</span><br>
-              <input type="radio" name="no26" onclick="open26a()"/><span>(2) 每星期吃 </span><input type="number" name="no26t1" class="input26"/><span>片吐司與</span></span><input type="number" name="no26t2" class="input26"/><span>個麵包、饅頭、包子</span><br>
-              <input type="radio" name="no26" onclick="open26a()"/><span>(3) 每月吃 </span></span><input type="number" name="no26t1" class="input26"/><span>片吐司與</span></span><input type="number" name="no26t2" class="input26"/><span>個麵包、饅頭、包子</span><br>
-              <input type="radio" name="no26" onclick="close26a()"/><span>(4) 都沒吃或一個月吃不到一碗 </span><br>
+              <label class="ps">(若只單吃一項，另一項請填0)</label></h2>
+              <label><input type="radio" name="q26" onclick="open26a()"/>(1) 每天吃 </label><input type="number" name="q26_1_1" class="input26"/><label>片吐司與</label></label><input type="number" name="q26_1_2" class="input26"/><label>個麵包、饅頭、包子</label><br>
+              <label><input type="radio" name="q26" onclick="open26a()"/>(2) 每星期吃 </label><input type="number" name="q26_2_1" class="input26"/><label>片吐司與</label></label><input type="number" name="q26_2_2" class="input26"/><label>個麵包、饅頭、包子</label><br>
+              <label><input type="radio" name="q26" onclick="open26a()"/>(3) 每月吃 </label></label><input type="number" name="q26_3_1" class="input26"/><label>片吐司與</label></label><input type="number" name="q26_2_3" class="input26"/><label>個麵包、饅頭、包子</label><br>
+              <label><input type="radio" name="q26" onclick="close26a()"/>(4) 都沒吃或一個月吃不到一碗 </label><br>
               <!-- 26a -->
               <div class="jump26a">
                 <br>
-               <h2 class="fs-title h2style " >26a. 請問您吃的是全穀的嗎？<span class="ps">（例如全麥土司、全麥麵包、雜糧饅頭）</span></h2>
-               <input type="radio" name="no26a" /><span>(1) 總是全穀的</span><br>
-               <input type="radio" name="no26a" /><span>(2) 大多是全穀的</span><br>
-               <input type="radio" name="no26a" /><span>(3) 一半一半</span><br>
-               <input type="radio" name="no26a" /><span>(4) 少數是全穀的</span><br>
-               <input type="radio" name="no26a" /><span>(5) 都不是全穀的</span><br>
+               <h2 class="fs-title h2style " >26a. 請問您吃的是全穀的嗎？<label class="ps">（例如全麥土司、全麥麵包、雜糧饅頭）</label></h2>
+               <label><input type="radio" name="q26a" />(1) 總是全穀的</label><br>
+               <label><input type="radio" name="q26a" />(2) 大多是全穀的</label><br>
+               <label><input type="radio" name="q26a" />(3) 一半一半</label><br>
+               <label><input type="radio" name="q26a" />(4) 少數是全穀的</label><br>
+               <label><input type="radio" name="q26a" />(5) 都不是全穀的</label><br>
               <br>
               </div>    
               <input type="button" name="previous" class="previous action-button" value="previous" />
-              <input type="button" name="next" class="next action-button" value="Next" />
+              <input type="button" name="next" class="next action-button 26btn" value="Next" disabled='true'/>
           </fieldset>
           <!-- 27 -->
           <fieldset>
             <h2 class="fs-title h2style">27. 請問您通常多久吃幾個水餃、蒸餃、鍋貼、水晶餃、餛飩、燒賣等？</h2>
-              <input type="radio" name="no27" /><span>(1) 每天吃 </span><input type="number" name="no27t"/><span>個</span><br>
-              <input type="radio" name="no27" /><span>(2) 每星期吃 </span><input type="number" name="no27t"/><span>個</span><br>
-              <input type="radio" name="no27" /><span>(3) 每月吃 </span><input type="number" name="no27t"/><span>個</span><br>
-              <input type="radio" name="no27" /><span>(4) 都沒吃或一個月吃不到一個 </span><br>
+              <label><input type="radio" name="q27"/>(1) 每天吃 </label><input type="number" name="q27_1"/><label>個</label><br>
+              <label><input type="radio" name="q27"/>(2) 每星期吃 </label><input type="number" name="q27_2"/><label>個</label><br>
+              <label><input type="radio" name="q27"/>(3) 每月吃 </label><input type="number" name="q27_3"/><label>個</label><br>
+              <label><input type="radio" name="q27"/>(4) 都沒吃或一個月吃不到一個 </label><br>
               <input type="button" name="previous" class="previous action-button" value="previous" />
-              <input type="button" name="next" class="next action-button" value="Next" />
+              <input type="button" name="next" class="next action-button 27btn" value="Next" disabled='true'/>
           </fieldset>
           <!-- 28 -->
           <fieldset>
             <h2 class="fs-title h2style">28. 請問您通常多久吃幾個蛋餅、蔥油餅、潤餅、大餅、燒餅等餅類？</h2>
-              <input type="radio" name="no28" /><span>(1) 每天吃 </span><input type="number" name="no28t"/><span>個</span><br>
-              <input type="radio" name="no28" /><span>(2) 每星期吃 </span><input type="number" name="no28t"/><span>個</span><br>
-              <input type="radio" name="no28" /><span>(3) 每月吃 </span><input type="number" name="no28t"/><span>個</span><br>
-              <input type="radio" name="no28" /><span>(4) 都沒吃或一個月吃不到一個 </span><br>
+              <label><input type="radio" name="q28"/>(1) 每天吃 </label><input type="number" name="q28_1"/><label>個</label><br>
+              <label><input type="radio" name="q28"/>(2) 每星期吃 </label><input type="number" name="q28_2"/><label>個</label><br>
+              <label><input type="radio" name="q28"/>(3) 每月吃 </label><input type="number" name="q28_3"/><label>個</label><br>
+              <label><input type="radio" name="q28"/>(4) 都沒吃或一個月吃不到一個 </label><br>
               <input type="button" name="previous" class="previous action-button" value="previous" />
-              <input type="button" name="next" class="next action-button" value="Next" />
+              <input type="button" name="next" class="next action-button 28btn" value="Next" disabled='true'/>
           </fieldset>
-          <!-- 29 -->
+
+          <!-- 29 飲酒題************************************************************************* -->
           <fieldset>
-            <h2 class="fs-title h2style">29. 請問您最近一個月中，通常一星期有幾天吃早餐？<br>
-            <span class="ps">（出外用餐或買外帶食物都算）</span></h2>
-              <input type="radio" name="no29" /><span>(1) 幾乎每天都吃早餐，其中有 </span><input type="number" name="no29t" class="input29"/><span>天的早餐是外食</span><br>
-              <input type="radio" name="no29" /><span>(2) 每星期有 5-6 天會吃早餐，其中有 </span><input type="number" name="no29t"class="input29"/><span>天的早餐是外食</span><br>
-              <input type="radio" name="no29" /><span>(3) 每星期有 3-4 天會吃早餐，其中有 </span><input type="number" name="no29t"class="input29"/><span>天的早餐是外食</span><br>
-              <input type="radio" name="no29" /><span>(4) 每星期有 1-2 天會吃早餐，其中有 </span><input type="number" name="no29t"class="input29"/><span>天的早餐是外食</span><br>
-              <input type="radio" name="no29" /><span>(5) 每個月有 1-3 天會吃早餐，其中有 </span><input type="number" name="no29t"class="input29"/><span>天的早餐是外食</span><br>
-              <input type="radio" name="no29" /><span>(6) 幾乎都不吃早餐 </span><br>
+            <h2 class="fs-title h2style">29. 請問您過去一個月最常喝的酒類？（最多勾選2種）</h2>
+            <label><input type="checkbox" name="q29" value="01"/>(1)沒有喝酒的習慣</label><br>
+            <label><input type="checkbox" name="q29" value="01"/>(2)啤酒（酒精濃度：3.5-4.5％）</label><br>
+            <label><input type="checkbox" name="q29" value="01"/>(3)水果酒（紅、白葡萄酒、梅酒等）（酒精濃度：10-13％）</label><br>
+            <label><input type="checkbox" name="q29" value="01"/>(4)白蘭地、威士忌、蘭姆酒、伏特加、琴酒、龍舌蘭（酒精濃度：40％）</label><br>
+            <label><input type="checkbox" name="q29" value="01"/>(5)高梁、大麴、茅台酒（酒精濃度：55-65％）</label><br>
+            <label><input type="checkbox" name="q29" value="01"/>(6)維士比、保力達（酒精濃度：8-10％）</label><br>
+            <label><input type="checkbox" name="q29" value="01"/>(7)米酒、米酒頭（酒精濃度：22％）</label><br>
+            <label><input type="checkbox" name="q29" value="01"/>(8)調酒（酒精濃度：10-30％）</label><br>
+            <label><input type="checkbox" name="q29" value="01"/>(9)沙瓦類調酒（例如：冰火）（酒精濃度：3.5-4.5％）</label><br>
+            <label><input type="checkbox" name="q29" value="01"/>(10)再製酒（例如：五加皮、竹葉青、百歲酒、龍鳳酒、玫瑰露）（酒精濃度：35-48％）</label><br>
+            <label><input type="checkbox" name="q29" value="01"/>(11)清酒（酒精濃度：14-16％）</label><br>
+            <label><input type="checkbox" name="q29" value="01"/>(12)花雕酒、紹興酒、紅露酒、黃酒（酒精濃度：16-18％）</label><br>
+            <label><input type="checkbox" name="q29" value="01"/>(13)鹿茸酒、蔘茸酒、各式藥酒類（酒精濃度：30％）</label><br>
+            <label><input type="checkbox" name="q29" value="01"/>(14)小米酒（酒精濃度：8-10％）</label><br>
+            <label><input type="checkbox" name="q29" value="01"/>(15)香檳、氣泡酒（酒精濃度：10-15％）</label><br>
+            <label><input type="checkbox" name="q29" value="01"/>(16)韓國燒酒、真露（酒精濃度：14-20％）​</label><br>
+            <label><input type="checkbox" name="q29" value="01"/>(17)烏梅酒、賓樂酒（酒精濃度：16-18％）​</label><br>
+            <label><input type="checkbox" name="q29" value="01"/>(18)奶酒（酒精濃度：17％）​</label><br>
+            
               <input type="button" name="previous" class="previous action-button" value="previous" />
-              <input type="button" name="next" class="next action-button" value="Next" />
+              <input type="button" name="next" class="next action-button 29btn" value="Next" disabled='true'/>
           </fieldset>
+
+
           <!-- 30 -->
           <fieldset>
-            <h2 class="fs-title h2style">30. 請問您最近一個月中，通常一星期有幾天吃午餐？<br>
-            <span class="ps">（出外用餐或買外帶食物都算）</span></h2>
-              <input type="radio" name="no30" /><span>(1) 幾乎每天都吃午餐，其中有 </span><input type="number" name="no30t" class="input30"/><span>天的午餐是外食</span><br>
-              <input type="radio" name="no30" /><span>(2) 每星期有 5-6 天會吃午餐，其中有 </span><input type="number" name="no30t"class="input30"/><span>天的午餐是外食</span><br>
-              <input type="radio" name="no30" /><span>(3) 每星期有 3-4 天會吃午餐，其中有 </span><input type="number" name="no30t"class="input30"/><span>天的午餐是外食</span><br>
-              <input type="radio" name="no30" /><span>(4) 每星期有 1-2 天會吃午餐，其中有 </span><input type="number" name="no30t"class="input30"/><span>天的午餐是外食</span><br>
-              <input type="radio" name="no30" /><span>(5) 每個月有 1-3 天會吃午餐，其中有 </span><input type="number" name="no30t"class="input30"/><span>天的午餐是外食</span><br>
-              <input type="radio" name="no30" /><span>(6) 幾乎都不吃午餐 </span><br>
+            <h2 class="fs-title h2style">30. 請問您最近一個月中，通常一星期有幾天吃早餐？<br>
+            <label class="ps">（出外用餐或買外帶食物都算）</label></h2>
+              <label><input type="radio" name="q30" />(1) 幾乎每天都吃早餐，其中有 </label><input type="number" name="no29t" class="input29"/><label>天的早餐是外食</label><br>
+              <label><input type="radio" name="q30" />(2) 每星期有 5-6 天會吃早餐，其中有 </label><input type="number" name="q30_1"class="input29"/><label>天的早餐是外食</label><br>
+              <label><input type="radio" name="q30" />(3) 每星期有 3-4 天會吃早餐，其中有 </label><input type="number" name="q30_2"class="input29"/><label>天的早餐是外食</label><br>
+              <label><input type="radio" name="q30" />(4) 每星期有 1-2 天會吃早餐，其中有 </label><input type="number" name="q30_3"class="input29"/><label>天的早餐是外食</label><br>
+              <label><input type="radio" name="q30" />(5) 每個月有 1-3 天會吃早餐，其中有 </label><input type="number" name="q30_4"class="input29"/><label>天的早餐是外食</label><br>
+              <label><input type="radio" name="q30" />(6) 幾乎都不吃早餐 </label><br>
               <input type="button" name="previous" class="previous action-button" value="previous" />
-              <input type="button" name="next" class="next action-button" value="Next" />
+              <input type="button" name="next" class="next action-button 30btn" value="Next" disabled='true'/>
           </fieldset>
           <!-- 31 -->
           <fieldset>
-            <h2 class="fs-title h2style">31. 請問您最近一個月中，通常一星期有幾天吃晚餐？<br>
-            <span class="ps">（出外用餐或買外帶食物都算）</span></h2>
-              <input type="radio" name="no31" /><span>(1) 幾乎每天都吃晚餐，其中有 </span><input type="number" name="no31t" class="input31"/><span>天的晚餐是外食</span><br>
-              <input type="radio" name="no31" /><span>(2) 每星期有 5-6 天會吃晚餐，其中有 </span><input type="number" name="no31t"class="input31"/><span>天的晚餐是外食</span><br>
-              <input type="radio" name="no31" /><span>(3) 每星期有 3-4 天會吃晚餐，其中有 </span><input type="number" name="no31t"class="input31"/><span>天的晚餐是外食</span><br>
-              <input type="radio" name="no31" /><span>(4) 每星期有 1-2 天會吃晚餐，其中有 </span><input type="number" name="no31t"class="input31"/><span>天的晚餐是外食</span><br>
-              <input type="radio" name="no31" /><span>(5) 每個月有 1-3 天會吃晚餐，其中有 </span><input type="number" name="no31t"class="input31"/><span>天的晚餐是外食</span><br>
-              <input type="radio" name="no31" /><span>(6) 幾乎都不吃晚餐 </span><br>
+            <h2 class="fs-title h2style">31. 請問您最近一個月中，通常一星期有幾天吃午餐？<br>
+            <label class="ps">（出外用餐或買外帶食物都算）</label></h2>
+              <label><input type="radio" name="q31" />(1) 幾乎每天都吃午餐，其中有 </label><input type="number" name="q31_1" class="input30"/><label>天的午餐是外食</label><br>
+              <label><input type="radio" name="q31" />(2) 每星期有 5-6 天會吃午餐，其中有 </label><input type="number" name="q31_2"class="input30"/><label>天的午餐是外食</label><br>
+              <label><input type="radio" name="q31" />(3) 每星期有 3-4 天會吃午餐，其中有 </label><input type="number" name="q31_3"class="input30"/><label>天的午餐是外食</label><br>
+              <label><input type="radio" name="q31" />(4) 每星期有 1-2 天會吃午餐，其中有 </label><input type="number" name="q31_4"class="input30"/><label>天的午餐是外食</label><br>
+              <label><input type="radio" name="q31" />(5) 每個月有 1-3 天會吃午餐，其中有 </label><input type="number" name="q31_5"class="input30"/><label>天的午餐是外食</label><br>
+              <label><input type="radio" name="q31" />(6) 幾乎都不吃午餐 </label><br>
               <input type="button" name="previous" class="previous action-button" value="previous" />
-              <input type="button" name="next" class="next action-button" value="Next" />
-          </fieldset>
-          <!-- 32-33 -->
-          <fieldset>
-            <h2 class="fs-title h2style">以下32-33題想請問您飲食中的用油情形，以一個排骨便當為例，如果主菜是炸排骨，另有三格炒的配菜，計算時炸的菜餚計 1 道，炒或燴的菜餚計 3 道。</h2><br>
-            <input type="button" name="previous" class="previous action-button" value="previous" />
-            <input type="button" name="next" class="next action-button" value="Next" />
+              <input type="button" name="next" class="next action-button 31btn" value="Next" disabled='true'/>
           </fieldset>
           <!-- 32 -->
           <fieldset>
-            <h2 class="fs-title h2style">32. 請問您最近一個月中，通常吃幾道用油炒或燴的菜餚？<br>
-              <span class="ps">（包含所有炒或燴的菜餚與炒飯、炒麵等）</span></h2>
-              <input type="radio" name="no32" /><span>(1) 每天吃 </span><input type="number" name="no32t"/><span>道</span><br>
-              <input type="radio" name="no32" /><span>(2) 每星期吃 </span><input type="number" name="no32t"/><span>道</span><br>
-              <input type="radio" name="no32" /><span>(3) 每月吃 </span><input type="number" name="no32t"/><span>道</span><br>
-              <input type="radio" name="no32" /><span>(4) 都沒吃或一個月吃不到一道 </span><br>
+            <h2 class="fs-title h2style">32. 請問您最近一個月中，通常一星期有幾天吃晚餐？<br>
+            <label class="ps">（出外用餐或買外帶食物都算）</label></h2>
+              <label><input type="radio" name="q32" />(1) 幾乎每天都吃晚餐，其中有 </label><input type="number" name="q32_1" class="input31"/><label>天的晚餐是外食</label><br>
+              <label><input type="radio" name="q32" />(2) 每星期有 5-6 天會吃晚餐，其中有 </label><input type="number" name="q32_2"class="input31"/><label>天的晚餐是外食</label><br>
+              <label><input type="radio" name="q32" />(3) 每星期有 3-4 天會吃晚餐，其中有 </label><input type="number" name="q32_3"class="input31"/><label>天的晚餐是外食</label><br>
+              <label><input type="radio" name="q32" />(4) 每星期有 1-2 天會吃晚餐，其中有 </label><input type="number" name="q32_4"class="input31"/><label>天的晚餐是外食</label><br>
+              <label><input type="radio" name="q32" />(5) 每個月有 1-3 天會吃晚餐，其中有 </label><input type="number" name="q32_5"class="input31"/><label>天的晚餐是外食</label><br>
+              <label><input type="radio" name="q32" />(6) 幾乎都不吃晚餐 </label><br>
               <input type="button" name="previous" class="previous action-button" value="previous" />
-              <input type="button" name="next" class="next action-button" value="Next" />
+              <input type="button" name="next" class="next action-button 32btn" value="Next" disabled='true'/>
+          </fieldset>
+          <!-- 33-34 -->
+          <fieldset>
+            <h2 class="fs-title h2style">以下33-34題想請問您飲食中的用油情形，以一個排骨便當為例，如果主菜是炸排骨，另有三格炒的配菜，計算時炸的菜餚計 1 道，炒或燴的菜餚計 3 道。</h2><br>
+            <input type="button" name="previous" class="previous action-button" value="previous" />
+            <input type="button" name="next" class="next action-button" value="Next" />
           </fieldset>
           <!-- 33 -->
           <fieldset>
-            <h2 class="fs-title h2style">33. 請問您最近一個月中，通常吃幾道用油炸的菜餚？<br>
-              <span class="ps">（包含所有炒或燴的菜餚與炒飯、炒麵等）</span></h2>
-              <input type="radio" name="no33" /><span>(1) 每天吃 </span><input type="number" name="no33t"/><span>道</span><br>
-              <input type="radio" name="no33" /><span>(2) 每星期吃 </span><input type="number" name="no33t"/><span>道</span><br>
-              <input type="radio" name="no33" /><span>(3) 每月吃 </span><input type="number" name="no33t"/><span>道</span><br>
-              <input type="radio" name="no33" /><span>(4) 都沒吃或一個月吃不到一道 </span><br>
+            <h2 class="fs-title h2style">33. 請問您最近一個月中，通常吃幾道用油炒或燴的菜餚？<br>
+              <label class="ps">（包含所有炒或燴的菜餚與炒飯、炒麵等）</label></h2>
+              <label><input type="radio" name="q33" />(1) 每天吃 </label><input type="number" name="q33_1"/><label>道</label><br>
+              <label><input type="radio" name="q33" />(2) 每星期吃 </label><input type="number" name="q33_2"/><label>道</label><br>
+              <label><input type="radio" name="q33" />(3) 每月吃 </label><input type="number" name="q33_3"/><label>道</label><br>
+              <label><input type="radio" name="q33" />(4) 都沒吃或一個月吃不到一道 </label><br>
               <input type="button" name="previous" class="previous action-button" value="previous" />
-              <input type="button" name="next" class="next action-button" value="Next" />
+              <input type="button" name="next" class="next action-button 33btn" value="Next" disabled='true'/>
           </fieldset>
           <!-- 34 -->
           <fieldset>
-            <h2 class="fs-title h2style">34. 請問您家中用什麼油烹調？<br>
-              <span class="ps">（包含所有炒或燴的菜餚與炒飯、炒麵等）</span></h2>
-              <input type="radio" name="no34" /><span>(1)每餐都為外食，沒有在家用油烹調 </span></br>
-              <input type="radio" name="no34" /><span>(2) 家中最常用的三種油為： </span></br>
-              <select name="no34a" id="" class="select34">
+            <h2 class="fs-title h2style">34. 請問您最近一個月中，通常吃幾道用油炸的菜餚？<br>
+              <label class="ps">（包含所有炒或燴的菜餚與炒飯、炒麵等）</label></h2>
+              <label><input type="radio" name="q34" />(1) 每天吃 </label><input type="number" name="q34_1"/><label>道</label><br>
+              <label><input type="radio" name="q34" />(2) 每星期吃 </label><input type="number" name="q34_2"/><label>道</label><br>
+              <label><input type="radio" name="q34" />(3) 每月吃 </label><input type="number" name="q34_3"/><label>道</label><br>
+              <label><input type="radio" name="q34" />(4) 都沒吃或一個月吃不到一道 </label><br>
+              <input type="button" name="previous" class="previous action-button" value="previous" />
+              <input type="button" name="next" class="next action-button 34btn" value="Next" disabled='true'/>
+          </fieldset>
+          <!-- 35 -->
+          <fieldset>
+            <h2 class="fs-title h2style">35. 請問您家中用什麼油烹調？<br>
+              <label class="ps">（包含所有炒或燴的菜餚與炒飯、炒麵等）</label></h2>
+              <label><input type="radio" name="q35"  onclick="close35()"/>(1)每餐都為外食，沒有在家用油烹調 </label></br>
+              <label><input type="radio" name="q35"  onclick="open35()"/>(2) 家中最常用的三種油為： </label></br>
+              <select name="q35_select_01" id="" class="select35_1">
                 <option value="">(0)無</option>
                 <option value="">(1)沙拉油</option>
                 <option value="">(2)調和油</option>
@@ -547,8 +611,8 @@
                 <option value="">(23)鵝油</option>
                 <option value="">(24)玄米油</option>
                 <option value="">(25)不知名的油</option>
-              </select>
-              <select name="no34b" id="" class="select34">
+              </select><br>
+              <select name="q35_select_02" id="" class="select35_2">
                 <option value="">(0)無</option>
                 <option value="">(1)沙拉油</option>
                 <option value="">(2)調和油</option>
@@ -575,8 +639,8 @@
                 <option value="">(23)鵝油</option>
                 <option value="">(24)玄米油</option>
                 <option value="">(25)不知名的油</option>
-              </select>
-              <select name="no34c" id="" class="select34">
+              </select><br>
+              <select name="q35_select_03" id="" class="select35_3">
                 <option value="">(0)無</option>
                 <option value="">(1)沙拉油</option>
                 <option value="">(2)調和油</option>
@@ -605,15 +669,15 @@
                 <option value="">(25)不知名的油</option>
               </select><br>
               <input type="button" name="previous" class="previous action-button" value="previous" />
-              <input type="button" name="next" class="next action-button" value="Next" />
+              <input type="button" name="next" class="next action-button 35btn" value="Next" disabled='true'/>
           </fieldset>
-          <!-- 35 -->
+          <!-- 36 -->
           <fieldset>
-            <h2 class="fs-title h2style">35. 請問您家中用什麼鹽烹調？<br>
-              <span class="ps">（包含所有炒或燴的菜餚與炒飯、炒麵等）</span></h2>
-              <input type="radio" name="no35" /><span>(1)每餐都為外食，沒有在家用鹽烹調</span></br>
-              <input type="radio" name="no35" /><span>(2)家中最常用的三種鹽為： </span></br>
-              <select name="no35a" id="" class="select35">
+            <h2 class="fs-title h2style">36. 請問您家中用什麼鹽烹調？<br>
+              <label class="ps">（包含所有炒或燴的菜餚與炒飯、炒麵等）</label></h2>
+              <label><input type="radio" name="q36"  onclick="close36()"/>(1)每餐都為外食，沒有在家用鹽烹調</label></br>
+              <label><input type="radio" name="q36"  onclick="open36()"/>(2)家中最常用的三種鹽為： </label></br>
+              <select name="q36_select_01" id="" class="select36_1">
                 <option value="">(0)無</option>
                 <option value="">(1)精鹽</option>
                 <option value="">(2)健康美味鹽</option>
@@ -622,8 +686,8 @@
                 <option value="">(5)海鹽</option>
                 <option value="">(6)湖鹽</option>
                 <option value="">(7)不知名的鹽</option>
-              </select>
-              <select name="no35b" id="" class="select35">
+              </select><br>
+              <select name="q36_select_02" id="" class="select36_2">
                 <option value="">(0)無</option>
                 <option value="">(1)精鹽</option>
                 <option value="">(2)健康美味鹽</option>
@@ -632,8 +696,8 @@
                 <option value="">(5)海鹽</option>
                 <option value="">(6)湖鹽</option>
                 <option value="">(7)不知名的鹽</option>
-              </select>
-              <select name="no35c" id="" class="select35">
+              </select><br>
+              <select name="q36_select_03" id="" class="select36_3">
                 <option value="">(0)無</option>
                 <option value="">(1)精鹽</option>
                 <option value="">(2)健康美味鹽</option>
@@ -645,7 +709,7 @@
               </select>
               <br>
               <input type="button" name="previous" class="previous action-button" value="previous" />
-              <input type="button" name="next" class="next action-button" value="Next" />
+              <input type="button" name="next" class="next action-button 36btn" value="Next" disabled='true'/>
         </fieldset>
     
           

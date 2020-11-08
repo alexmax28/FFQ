@@ -76,6 +76,13 @@ $(".submit").click(function(){
 
 
 //加入
+//2a
+function open2a(){
+	document.querySelector('.jump2a').style.display='block';	
+	}
+	function close2a(){
+		document.querySelector('.jump2a').style.display='none';
+	}
 // 3a
 function open3a(){
 document.querySelector('.jump3a').style.display='block';	
@@ -146,6 +153,41 @@ function open26a(){
 function close26a(){
 	document.querySelector('.jump26a').style.display='none';
 }
+// 35
+// function close35(){
+// 	document.querySelector('.select35').setAttribute("disabled",'true');	
+// }
+// function open35(){
+// 	document.querySelector('.select35').setAttribute("disabled",'false');	
+// }
+
+
+function open35(){
+	document.querySelector('.select35_1').style.display='block';
+	document.querySelector('.select35_2').style.display='block';
+	document.querySelector('.select35_3').style.display='block';	
+}
+function close35(){
+	document.querySelector('.select35_1').style.display='none';
+	document.querySelector('.select35_2').style.display='none';
+	document.querySelector('.select35_3').style.display='none';
+}
+
+// 36
+function open36(){
+	document.querySelector('.select36_1').style.display='block';
+	document.querySelector('.select36_2').style.display='block';
+	document.querySelector('.select36_3').style.display='block';	
+}
+function close36(){
+	document.querySelector('.select36_1').style.display='none';
+	document.querySelector('.select36_2').style.display='none';
+	document.querySelector('.select36_3').style.display='none';
+}
+
+
+
+
 
 
 
