@@ -1,4 +1,4 @@
-/*custom font*/
+
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 
@@ -151,12 +151,19 @@ body {
 .input26,.input29,.input30,.input31{
 	width: 50px;
 }
-.select35,.select36{
+.select34,.select35{
 	width: 90px;
+}
+label>input{
+	width: 40px;
+}
+label>span{
+	color:red;
+	font-size: 8px;
 }
 
 
-.jump2a,.jump3a,.jump4a,.jump11a,.jump12a,.jump15a,.jump18a,.jump21a,.jump22a,.jump24a,.jump25a,.jump26a,.select35_1,.select35_2,.select35_3,.select36_1,.select36_2,.select36_3{
+.jump2a,.jump3a,.jump4a,.jump11a,.jump12a,.jump15a,.jump18a,.jump21a,.jump22a,.jump24a,.jump25a,.jump26a{
 	display:none;
 	animation-name:show;
 	animation-duration:3s;
@@ -172,5 +179,21 @@ body {
 	}
 	50%{
 		opacity:1;
+	}
+}
+
+@media(max-width:768px){
+	#msform .action-button{
+		width: 80px;
+	}
+	label{
+		font-size: 14px;
+	}
+	label>input{
+		width: 40px;
+	}
+	label>span{
+		color:red;
+		font-size: 8px;
 	}
 }
