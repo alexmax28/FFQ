@@ -132,6 +132,13 @@ function open21a(){
 function close21a(){
 	document.querySelector('.jump21a').style.display='none';
 }
+//22a
+function open22a(){
+	document.querySelector('.jump22a').style.display='block';	
+}
+function close22a(){
+	document.querySelector('.jump22a').style.display='none';
+}
 //24
 function open24a(){
 	document.querySelector('.jump24a').style.display='block';	
