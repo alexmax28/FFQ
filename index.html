@@ -14,11 +14,11 @@
             <fieldset>
               <h2 class="fs-title h2style">1.請問您通常多久喝一次可樂、汽水、運動飲料、巧克力飲料、非 100％的加工果汁、冬瓜茶等含糖冷熱飲料？</h2>
               <label><input type="radio" name="Q01" value="1"/>(1) 都沒喝或一個月喝不到 1 次</label><br>
-              <label><input type="radio" name="Q01" value="1"/>(2) 一個月喝 1-3 次</label><br>
-              <label><input type="radio" name="Q01" value="1"/>(3) 每星期喝 1-2 次</label><br>
-              <label><input type="radio" name="Q01" value="1"/>(4) 每星期喝 3-4 次</label><br>
-              <label><input type="radio" name="Q01" value="1"/>(5) 每星期喝 5-6 次</label><br>
-              <label><input type="radio" name="Q01" value="1"/>(6) 每天喝<input type="number" name="q01_6" />次</label><br>
+              <label><input type="radio" name="Q01" value="2"/>(2) 一個月喝 1-3 次</label><br>
+              <label><input type="radio" name="Q01" value="3"/>(3) 每星期喝 1-2 次</label><br>
+              <label><input type="radio" name="Q01" value="4"/>(4) 每星期喝 3-4 次</label><br>
+              <label><input type="radio" name="Q01" value="5"/>(5) 每星期喝 5-6 次</label><br>
+              <label><input type="radio" name="Q01" value="6"/>(6) 每天喝<input type="number" name="q01_6" />次</label><br>
               <input type="button" name="next" class="next action-button 1btn" value="Next" disabled='true'/>
             </fieldset>
             <!-- 2 -->
@@ -248,26 +248,26 @@
           <fieldset>
             <h2 class="fs-title h2style">15. 請問您通常多久吃一次魚以外的各式海鮮類？<br>
               <label class="ps">（如花枝、蛤蜊、蝦、螃蟹）</label></h2>
-            <label><input type="radio" name="q15" onclick="close15a()"/>(1) 都沒吃或一個月吃不到 1 次</label><br>
-            <label><input type="radio" name="q15" onclick="open15a()"/>(2) 一個月吃 1-3 次</label><br>
-            <label><input type="radio" name="q15" onclick="open15a()"/>(3) 每星期吃 1-2 次</label><br>
-            <label><input type="radio" name="q15" onclick="open15a()"/>(4) 每星期吃 3-4 次</label><br>
-            <label><input type="radio" name="q15" onclick="open15a()"/>(5) 每星期吃 5-6 次</label><br>
+            <label><input type="radio" name="q15" class="q15" value="1" onclick="close15a()"/>(1) 都沒吃或一個月吃不到 1 次</label><br>
+            <label><input type="radio" name="q15" class="q15" value="2" onclick="open15a()"/>(2) 一個月吃 1-3 次</label><br>
+            <label><input type="radio" name="q15" class="q15" value="3" onclick="open15a()"/>(3) 每星期吃 1-2 次</label><br>
+            <label><input type="radio" name="q15" class="q15" value="4" onclick="open15a()"/>(4) 每星期吃 3-4 次</label><br>
+            <label><input type="radio" name="q15" class="q15" value="5" onclick="open15a()"/>(5) 每星期吃 5-6 次</label><br>
             <!-- 15a -->
             <div class="jump15a">
               <br>
              <h2 class="fs-title h2style " >15a. 請問您常吃的海鮮類是？<label class="ps">（可複選）</label></h2>
-            <label><input type="checkbox" name="q15a_01" value="01"/>(01)花枝/烏賊/魷魚/小管/章魚類</label><br>
-            <label><input type="checkbox" name="q15a_02" value="02"/>(02)蛤蜊/蜆/海瓜子類</label><br>
-            <label><input type="checkbox" name="q15a_03" value="03"/>(03)牡蠣/蚵</label><br>
-            <label><input type="checkbox" name="q15a_04" value="04"/>(04)蝦子</label><br>
-            <label><input type="checkbox" name="q15a_05" value="05"/>(05)蝦米</label><br>
-            <label><input type="checkbox" name="q15a_06" value="06"/>(06)螃蟹</label><br>
-            <label><input type="checkbox" name="q15a_07" value="07"/>(07)干貝</label><br>
-            <label><input type="checkbox" name="q15a_08" value="08"/>(08)螺類</label><br>
-            <label><input type="checkbox" name="q15a_09" value="09"/>(09)鮑魚</label><br>
-            <label><input type="checkbox" name="q15a_10" value="10"/>(10)龍蝦</label><br>
-            <label><input type="checkbox" name="q15a_11" value="11"/>(11)蝸牛肉</label><br>
+            <label><input type="checkbox" name="q15a_01" class="q15a" value="01"/>(01)花枝/烏賊/魷魚/小管/章魚類</label><br>
+            <label><input type="checkbox" name="q15a_02" class="q15a"value="02"/>(02)蛤蜊/蜆/海瓜子類</label><br>
+            <label><input type="checkbox" name="q15a_03" class="q15a"value="03"/>(03)牡蠣/蚵</label><br>
+            <label><input type="checkbox" name="q15a_04" class="q15a"value="04"/>(04)蝦子</label><br>
+            <label><input type="checkbox" name="q15a_05" class="q15a"value="05"/>(05)蝦米</label><br>
+            <label><input type="checkbox" name="q15a_06" class="q15a"value="06"/>(06)螃蟹</label><br>
+            <label><input type="checkbox" name="q15a_07" class="q15a"value="07"/>(07)干貝</label><br>
+            <label><input type="checkbox" name="q15a_08" class="q15a"value="08"/>(08)螺類</label><br>
+            <label><input type="checkbox" name="q15a_09" class="q15a"value="09"/>(09)鮑魚</label><br>
+            <label><input type="checkbox" name="q15a_10" class="q15a"value="10"/>(10)龍蝦</label><br>
+            <label><input type="checkbox" name="q15a_11" class="q15a"value="11"/>(11)蝸牛肉</label><br>
             <br>
             </div>    
             <input type="button" name="previous" class="previous action-button" value="previous" />
