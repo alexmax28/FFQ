@@ -105,7 +105,7 @@ $("input[name='q14']").click(function(){
    }
 });
 
-// 15
+// 15*****************************************
 $(".q15").click(function(){
     var qa1val = $("input[name=q15]:checked");
     if (qa1val.val()=='1'){
@@ -120,6 +120,7 @@ $(".q15a").click(function(){
     }
 
 });
+// *****************************************
 
 
 $("input[name='q16']").click(function(){
@@ -135,15 +136,22 @@ $("input[name='q17']").click(function(){
     $('.17btn').attr('disabled',false);
    }
 });
-
+// 18*****************************************
 $("input[name='q18']").click(function(){
-    var qa1val = $("input[name=q18]:checked");
-    if(qa1val.val() !==''){
+    var qaval = $("input[name=q18]:checked");
+    if(qaval.val() =='1'){
     $('.18btn').attr('disabled',false);
    }
 });
 
+$(".q18a").click(function(){
+    var q18a =$('.q18a').val();
+    if(q18a !==''){
+        $('.18btn').attr('disabled',false);
+    }
+});
 
+// *****************************************
 
 // 19
 $("input[name='q19']").click(function(){

@@ -18,17 +18,18 @@
               <label><input type="radio" name="Q01" value="3"/>(3) 每星期喝 1-2 次</label><br>
               <label><input type="radio" name="Q01" value="4"/>(4) 每星期喝 3-4 次</label><br>
               <label><input type="radio" name="Q01" value="5"/>(5) 每星期喝 5-6 次</label><br>
-              <label><input type="radio" name="Q01" value="6"/>(6) 每天喝<input type="number" name="q01_6" />次</label><br>
+              <label><input type="radio" name="Q01" value="6"/>(6) 每天喝<input type="number" name="q01_6" min="1" max="10"/>次</label><br>
               <input type="button" name="next" class="next action-button 1btn" value="Next" disabled='true'/>
             </fieldset>
             <!-- 2 -->
             <fieldset>
               <h2 class="fs-title h2style">2. 請問您通常多久喝一次咖啡？</h2>
               <label><input type="radio" name="Q02" onclick='close2a()' value="1"/>(1) 都沒喝或一個月喝不到 1 次</label><br>
-              <label><input type="radio" name="Q02" onclick='close2a()' value="1"/>(2) 一個月喝 1-3 次</label><br>
-              <label><input type="radio" name="Q02" onclick='close2a()' value="1"/>(3) 每星期喝 1-2 次</label><br>
-              <label><input type="radio" name="Q02" onclick='close2a()' value="1"/>(4) 每星期喝 3-4 次</label><br>
-              <label><input type="radio" name="Q02" onclick='close2a()' value="1"/>(5) 每星期喝 5-6 次</label><br>
+              <label><input type="radio" name="Q02" onclick='open2a()' value="1"/>(2) 一個月喝 1-3 次</label><br>
+              <label><input type="radio" name="Q02" onclick='open2a()' value="1"/>(3) 每星期喝 1-2 次</label><br>
+              <label><input type="radio" name="Q02" onclick='open2a()' value="1"/>(4) 每星期喝 3-4 次</label><br>
+              <label><input type="radio" name="Q02" onclick='open2a()' value="1"/>(5) 每星期喝 5-6 次</label><br>
+              <label><input type="radio" name="Q02" onclick='open2a()' value="6"/>(6) 每天喝<input type="number" name="q02_6" min="1" max="10"/>次</label><br>
               <div class="jump2a">
                 <br>
               <h2 class="fs-title h2style " >2a. 請問您喝的咖啡是否加奶精（三合一咖啡算是有加奶精）？</h2><br>
@@ -59,11 +60,12 @@
             <!-- 3 -->
             <fieldset>
               <h2 class="fs-title h2style">3. 請問您通常多久喝一次茶或各式奶茶？</h2>
-              <label><input type="radio" name="q03" class="no3" onclick='close3a()'value="0"/>(1) 都沒喝或一個月喝不到 1 次</label><br>
-              <label><input type="radio" name="q03" class="no3" onclick="open3a()" value="3a"/>(2) 一個月喝 1-3 次</label><br>
-              <label><input type="radio" name="q03" class="no3" onclick="open3a()" value="3a"/>(3) 每星期喝 1-2 次</label><br>
-              <label><input type="radio" name="q03" class="no3" onclick="open3a()" value="3a"/>(4) 每星期喝 3-4 次</label><br>
-              <label><input type="radio" name="q03" class="no3" onclick="open3a()" value="3a"/>(5) 每星期喝 5-6 次</label><br>
+              <label><input type="radio" name="q03" class="no3" onclick='close3a()'value="1"/>(1) 都沒喝或一個月喝不到 1 次</label><br>
+              <label><input type="radio" name="q03" class="no3" onclick="open3a()" value="2"/>(2) 一個月喝 1-3 次</label><br>
+              <label><input type="radio" name="q03" class="no3" onclick="open3a()" value="3"/>(3) 每星期喝 1-2 次</label><br>
+              <label><input type="radio" name="q03" class="no3" onclick="open3a()" value="4"/>(4) 每星期喝 3-4 次</label><br>
+              <label><input type="radio" name="q03" class="no3" onclick="open3a()" value="5"/>(5) 每星期喝 5-6 次</label><br>
+              <label><input type="radio" name="q03" class="no3" onclick="open3a()" value="6"/>(6) 每天喝<input type="number" name="q03_6" min="1" max="10"/>次</label><br>
               <!-- 3A -->
               <div class="jump3a">
                 <br>
@@ -94,6 +96,7 @@
              <label><input type="radio" name="q04" onclick="open4a()" />(3) 每星期喝 1-2 次</label><br>
              <label><input type="radio" name="q04" onclick="open4a()" />(4) 每星期喝 3-4 次</label><br>
              <label><input type="radio" name="q04" onclick="open4a()" />(5) 每星期喝 5-6 次</label><br>
+             <label><input type="radio" name="q04" onclick="open4a()" value="6"/>(6) 每天喝<input type="number" name="q04_6" min="1" max="10"/>次</label><br>
     
              <!-- 4a -->
              <div class="jump4a">
@@ -118,6 +121,7 @@
             <label><input type="radio" name="q05" />(3) 每星期吃 1-2 次</label><br>
             <label><input type="radio" name="q05" />(4) 每星期吃 3-4 次</label><br>
             <label><input type="radio" name="q05" />(5) 每星期吃 5-6 次</label><br>
+            <label><input type="radio" name="q05" />(6) 每天吃<input type="number" name="q05_6" min="1" max="10"/>次</label><br>
             <input type="button" name="previous" class="previous action-button" value="previous" />
             <input type="button" name="next" class="next action-button 5btn" value="Next"  disabled='true'/>
           </fieldset>
@@ -129,6 +133,7 @@
             <label><input type="radio" name="q06" />(3) 每星期吃 1-2 次</label><br>
             <label><input type="radio" name="q06" />(4) 每星期吃 3-4 次</label><br>
             <label><input type="radio" name="q06" />(5) 每星期吃 5-6 次</label><br>
+            <label><input type="radio" name="q06" />(6) 每天吃<input type="number" name="q06_6" min="1" max="10"/>次</label><br>
             <input type="button" name="previous" class="previous action-button" value="previous" />
             <input type="button" name="next" class="next action-button 6btn" value="Next"  disabled='true'/>
           </fieldset>
@@ -140,6 +145,7 @@
             <label><input type="radio" name="q07" />(3) 每星期吃 1-2 次</label><br>
             <label><input type="radio" name="q07" />(4) 每星期吃 3-4 次</label><br>
             <label><input type="radio" name="q07" />(5) 每星期吃 5-6 次</label><br>
+            <label><input type="radio" name="q07" />(6) 每天吃<input type="number" name="q06_7" min="1" max="10"/>次</label><br>
             <input type="button" name="previous" class="previous action-button" value="previous" />
             <input type="button" name="next" class="next action-button 7btn" value="Next"  disabled='true'/>
           </fieldset>
@@ -151,6 +157,7 @@
             <label><input type="radio" name="q08" />(3) 每星期吃 1-2 次</label><br>
             <label><input type="radio" name="q08" />(4) 每星期吃 3-4 次</label><br>
             <label><input type="radio" name="q08" />(5) 每星期吃 5-6 次</label><br>
+            <label><input type="radio" name="q08" />(6) 每天吃<input type="number" name="q08_6" min="1" max="10"/>次</label><br>
             <input type="button" name="previous" class="previous action-button" value="previous" />
             <input type="button" name="next" class="next action-button 8btn" value="Next" disabled='true'/>
           </fieldset>
@@ -162,6 +169,7 @@
             <label><input type="radio" name="q09" />(3) 每星期吃 1-2 次</label><br>
             <label><input type="radio" name="q09" />(4) 每星期吃 3-4 次</label><br>
             <label><input type="radio" name="q09" />(5) 每星期吃 5-6 次</label><br>
+            <label><input type="radio" name="q09" />(6) 每天吃<input type="number" name="q09_6" min="1" max="10"/>次</label><br>
             <input type="button" name="previous" class="previous action-button" value="previous" />
             <input type="button" name="next" class="next action-button 9btn" value="Next" disabled='true'/>
           </fieldset>
@@ -174,6 +182,7 @@
             <label><input type="radio" name="q10" />(3) 每星期吃 1-2 次</label><br>
             <label><input type="radio" name="q10" />(4) 每星期吃 3-4 次</label><br>
             <label><input type="radio" name="q10" />(5) 每星期吃 5-6 次</label><br>
+            <label><input type="radio" name="q10" />(6) 每天吃<input type="number" name="q10_6" min="1" max="10"/>次</label><br>
             <input type="button" name="previous" class="previous action-button" value="previous" />
             <input type="button" name="next" class="next action-button 10btn" value="Next" disabled='true'/>
           </fieldset>
@@ -185,6 +194,7 @@
             <label><input type="radio" name="q11" onclick="open11a()"/>(3) 每星期吃 1-2 次</label><br>
             <label><input type="radio" name="q11" onclick="open11a()"/>(4) 每星期吃 3-4 次</label><br>
             <label><input type="radio" name="q11" onclick="open11a()"/>(5) 每星期吃 5-6 次</label><br>
+            <label><input type="radio" name="q11" onclick="open11a()"/>(6) 每天吃<input type="number" name="q11_6" min="1" max="10"/>次</label><br>
             <!-- 11a -->
             <div class="jump11a">
               <br>
@@ -207,6 +217,7 @@
             <label><input type="radio" name="q12" onclick="open12a()"/>(3) 每星期吃 1-2 次</label><br>
             <label><input type="radio" name="q12" onclick="open12a()"/>(4) 每星期吃 3-4 次</label><br>
             <label><input type="radio" name="q12" onclick="open12a()"/>(5) 每星期吃 5-6 次</label><br>
+            <label><input type="radio" name="q12" onclick="open12a()"/>(6) 每天吃<input type="number" name="q12_6" min="1" max="10"/>次</label><br>
             <!-- 12a -->
             <div class="jump12a">
               <br>
@@ -230,6 +241,7 @@
             <label><input type="radio" name="q13" />(3) 每星期吃 1-2 次</label><br>
             <label><input type="radio" name="q13" />(4) 每星期吃 3-4 次</label><br>
             <label><input type="radio" name="q13" />(5) 每星期吃 5-6 次</label><br>
+            <label><input type="radio" name="q13" />(6) 每天吃<input type="number" name="q13_6" min="1" max="10"/>次</label><br>
             <input type="button" name="previous" class="previous action-button" value="previous" />
             <input type="button" name="next" class="next action-button 13btn" value="Next" disabled='true'/>
           </fieldset>
@@ -241,6 +253,7 @@
             <label><input type="radio" name="q14" />(3) 每星期吃 1-2 次</label><br>
             <label><input type="radio" name="q14" />(4) 每星期吃 3-4 次</label><br>
             <label><input type="radio" name="q14" />(5) 每星期吃 5-6 次</label><br>
+            <label><input type="radio" name="q14" />(6) 每天吃<input type="number" name="q14_6" min="1" max="10"/>次</label><br>
             <input type="button" name="previous" class="previous action-button" value="previous" />
             <input type="button" name="next" class="next action-button 14btn" value="Next" disabled='true'/>
           </fieldset>
@@ -253,6 +266,7 @@
             <label><input type="radio" name="q15" class="q15" value="3" onclick="open15a()"/>(3) 每星期吃 1-2 次</label><br>
             <label><input type="radio" name="q15" class="q15" value="4" onclick="open15a()"/>(4) 每星期吃 3-4 次</label><br>
             <label><input type="radio" name="q15" class="q15" value="5" onclick="open15a()"/>(5) 每星期吃 5-6 次</label><br>
+            <label><input type="radio" name="q15" class="q15" value="5" onclick="open15a()"/>(6) 每天吃<input type="number" name="q15_6" min="1" max="10"/>次</label><br>
             <!-- 15a -->
             <div class="jump15a">
               <br>
@@ -281,6 +295,7 @@
             <label><input type="radio" name="q16"/>(3) 每星期吃 1-2 次</label><br>
             <label><input type="radio" name="q16"/>(4) 每星期吃 3-4 次</label><br>
             <label><input type="radio" name="q16"/>(5) 每星期吃 5-6 次</label><br>
+            <label><input type="radio" name="q16"/>(6) 每天吃<input type="number" name="q16_6" min="1" max="10"/>次</label><br>
             <input type="button" name="previous" class="previous action-button" value="previous" />
             <input type="button" name="next" class="next action-button 16btn" value="Next" disabled='true'/>
           </fieldset>
@@ -292,6 +307,7 @@
             <label><input type="radio" name="q17"/>(3) 每星期吃 1-2 次</label><br>
             <label><input type="radio" name="q17"/>(4) 每星期吃 3-4 次</label><br>
             <label><input type="radio" name="q17"/>(5) 每星期吃 5-6 次</label><br>
+            <label><input type="radio" name="q17"/>(6) 每天吃<input type="number" name="q17_6" min="1" max="10"/>次</label><br>
             <input type="button" name="previous" class="previous action-button" value="previous" />
             <input type="button" name="next" class="next action-button 17btn" value="Next" disabled='true'/>
           </fieldset>
@@ -299,24 +315,25 @@
           <fieldset>
             <h2 class="fs-title h2style">18. 請問您通常多久吃一次堅果類？<br>
               <label class="ps">（如花生、芝麻、瓜子、腰果、杏仁、核桃 等）</label></h2>
-            <label><input type="radio" name="q18" onclick="close18a()"/>(1) 都沒吃或一個月吃不到 1 次</label><br>
-            <label><input type="radio" name="q18" onclick="open18a()"/>(2) 一個月吃 1-3 次</label><br>
-            <label><input type="radio" name="q18" onclick="open18a()"/>(3) 每星期吃 1-2 次</label><br>
-            <label><input type="radio" name="q18" onclick="open18a()"/>(4) 每星期吃 3-4 次</label><br>
-            <label><input type="radio" name="q18" onclick="open18a()"/>(5) 每星期吃 5-6 次</label><br>
+            <label><input type="radio" name="q18" onclick="close18a()" value="1"/>(1) 都沒吃或一個月吃不到 1 次</label><br>
+            <label><input type="radio" name="q18" onclick="open18a()" value="2"/>(2) 一個月吃 1-3 次</label><br>
+            <label><input type="radio" name="q18" onclick="open18a()" value="3"/>(3) 每星期吃 1-2 次</label><br>
+            <label><input type="radio" name="q18" onclick="open18a()" value="4"/>(4) 每星期吃 3-4 次</label><br>
+            <label><input type="radio" name="q18" onclick="open18a()" value="5"/>(5) 每星期吃 5-6 次</label><br>
+            <label><input type="radio" name="q18" onclick="open18a()" value="6"/>(6) 每天吃<input type="number" name="q18_6" min="1" max="10"/>次</label><br>
             <!-- 18a -->
             <div class="jump18a">
               <br>
-             <h2 class="fs-title h2style " >15a. 請問您常吃的海鮮類是？<label class="ps">（可複選）</label></h2>
-            <label><input type="checkbox" name="q18a_01" value="01"/>(01)花生</label><br>
-            <label><input type="checkbox" name="q18a_02" value="02"/>(02)芝麻</label><br>
-            <label><input type="checkbox" name="q18a_03" value="03"/>(03)黑瓜子</label><br>
-            <label><input type="checkbox" name="q18a_04" value="04"/>(04)白瓜子</label><br>
-            <label><input type="checkbox" name="q18a_05" value="05"/>(05)葵瓜子</label><br>
-            <label><input type="checkbox" name="q18a_06" value="06"/>(06)腰果</label><br>
-            <label><input type="checkbox" name="q18a_07" value="07"/>(07)杏仁果</label><br>
-            <label><input type="checkbox" name="q18a_08" value="08"/>(08)開心果</label><br>
-            <label><input type="checkbox" name="q18a_09" value="09"/>(09)核桃</label><br>
+             <h2 class="fs-title h2style " >18a. 請問您常吃的海鮮類是？<label class="ps">（可複選）</label></h2>
+            <label><input type="checkbox" name="q18a_01" class="q18a" value="01"/>(01)花生</label><br>
+            <label><input type="checkbox" name="q18a_02" class="q18a" value="02"/>(02)芝麻</label><br>
+            <label><input type="checkbox" name="q18a_03" class="q18a" value="03"/>(03)黑瓜子</label><br>
+            <label><input type="checkbox" name="q18a_04" class="q18a" value="04"/>(04)白瓜子</label><br>
+            <label><input type="checkbox" name="q18a_05" class="q18a" value="05"/>(05)葵瓜子</label><br>
+            <label><input type="checkbox" name="q18a_06" class="q18a" value="06"/>(06)腰果</label><br>
+            <label><input type="checkbox" name="q18a_07" class="q18a" value="07"/>(07)杏仁果</label><br>
+            <label><input type="checkbox" name="q18a_08" class="q18a" value="08"/>(08)開心果</label><br>
+            <label><input type="checkbox" name="q18a_09" class="q18a" value="09"/>(09)核桃</label><br>
             <br>
             </div>    
             <input type="button" name="previous" class="previous action-button" value="previous" />
@@ -326,9 +343,9 @@
           <fieldset>
             <h2 class="fs-title h2style">19. 請問您通常多久吃一個水果？<br>
               <label class="ps">（請將您吃的各種水果加總，當份量與一個網球大小差不都，即為吃到一個水果）</label></h2>
-              <label><input type="radio" name="q19"/>(1) 每天吃<input type="number" name="q19_1" /> 個</label><br>
-              <label><input type="radio" name="q19"/>(2) 每星期吃<input type="number" name="q19_2" /> 個</label><br>
-              <label><input type="radio" name="q19"/>(3) 每月吃<input type="number" name="q19_3" /> 個</label><br>
+              <label><input type="radio" name="q19"/>(1) 每天吃<input type="number" name="q19_1" min="1" max="10"/> 個</label><br>
+              <label><input type="radio" name="q19"/>(2) 每星期吃<input type="number" name="q19_2" min="1" max="10"/> 個</label><br>
+              <label><input type="radio" name="q19"/>(3) 每月吃<input type="number" name="q19_3" min="1" max="10"/> 個</label><br>
               <label><input type="radio" name="q19"/>(4) 都沒吃或一個月吃不到一個 </label><br>
               <input type="button" name="previous" class="previous action-button" value="previous" />
             <input type="button" name="next" class="next action-button 19btn" value="Next" disabled='true'/>
@@ -338,9 +355,9 @@
             <h2 class="fs-title h2style">20. 請問您通常多久吃一大湯匙的蔬菜？<br>
               <label class="ps">（包含葉菜類、筍類、瓜果類、菇類、豆類、根莖蔬菜類、海產蔬菜類等）</label><br>
               <label class="ps">（大湯匙：自助餐用打菜的大湯匙，一大湯匙 = 半飯碗）</label><br></h2>
-              <label><input type="radio" name="q20"/>(1) 每天吃 <input type="number" name="q20_1" />大湯匙</label><br>
-              <label><input type="radio" name="q20"/>(2) 每星期吃 <input type="number" name="q20_2" />大湯匙</label><br>
-              <label><input type="radio" name="q20"/>(3) 每月吃 <input type="number" name="q20_3" />大湯匙</label><br>
+              <label><input type="radio" name="q20"/>(1) 每天吃 <input type="number" name="q20_1" min="1" max="10"/>大湯匙</label><br>
+              <label><input type="radio" name="q20"/>(2) 每星期吃 <input type="number" name="q20_2" min="1" max="10" />大湯匙</label><br>
+              <label><input type="radio" name="q20"/>(3) 每月吃 <input type="number" name="q20_3" min="1" max="10"/>大湯匙</label><br>
               <label><input type="radio" name="q20"/>(4) 都沒吃或一個月吃不到一大湯匙 </label><br>
               <input type="button" name="previous" class="previous action-button" value="previous" />
             <input type="button" name="next" class="next action-button 20btn" value="Next" disabled='true'/>
@@ -349,9 +366,9 @@
           <fieldset>
             <h2 class="fs-title h2style">21. 請問您通常多久喝一杯牛奶、調味乳等？<br>
               <label class="ps">（包括鮮奶、奶粉沖泡的奶類或拿鐵加的牛奶 都算）</label><br></h2>
-              <label><input type="radio" name="q21" onclick="open21a()"/>(1) 每天喝 <input type="number" name="q21_1"/>杯</label><br>
-              <label><input type="radio" name="q21" onclick="open21a()"/>(2) 每星期喝 <input type="number" name="q21_2"/>杯</label><br>
-              <label><input type="radio" name="q21" onclick="open21a()"/>(3) 每月喝 <input type="number" name="q21_3"/>杯</label><br>
+              <label><input type="radio" name="q21" onclick="open21a()"/>(1) 每天喝 <input type="number" name="q21_1" min="1" max="10"/>杯</label><br>
+              <label><input type="radio" name="q21" onclick="open21a()"/>(2) 每星期喝 <input type="number" name="q21_2" min="1" max="10"/>杯</label><br>
+              <label><input type="radio" name="q21" onclick="open21a()"/>(3) 每月喝 <input type="number" name="q21_3" min="1" max="10"/>杯</label><br>
               <label><input type="radio" name="q21" onclick="close21a()"/>(4) 都沒吃或一個月喝不到一杯 </label><br>
               <!-- 21a -->
               <div class="jump21a">
@@ -369,9 +386,9 @@
           <fieldset>
             <h2 class="fs-title h2style">22. 請問您通常多久喝一杯優格或優酪乳？<br>
               <label class="ps">（一杯為 250 ㏄）</label><br></h2>
-              <label><input type="radio" name="q22" onclick="open22a()"/>(1) 每天喝 <input type="number" name="q22_1" />杯</label><br>
-              <label><input type="radio" name="q22" onclick="open22a()"/>(2) 每星期喝 <input type="number" name="q22_2" />杯</label><br>
-              <label><input type="radio" name="q22" onclick="open22a()"/>(3) 每月喝 <input type="number" name="q22_3" />杯</label><br>
+              <label><input type="radio" name="q22" onclick="open22a()"/>(1) 每天喝 <input type="number" name="q22_1" min="1" max="10"/>杯</label><br>
+              <label><input type="radio" name="q22" onclick="open22a()"/>(2) 每星期喝 <input type="number" name="q22_2" min="1" max="10"/>杯</label><br>
+              <label><input type="radio" name="q22" onclick="open22a()"/>(3) 每月喝 <input type="number" name="q22_3" min="1" max="10"/>杯</label><br>
               <label><input type="radio" name="q22" onclick="close22a()"/>(4) 都沒喝或一個月喝不到一杯 </label><br>
               <!-- 22a -->
               <div class="jump22a">
@@ -389,9 +406,9 @@
           <fieldset>
             <h2 class="fs-title h2style">23. 請問您通常多久吃一顆蛋？<br>
               <label class="ps">（例如雞蛋、皮蛋、鹹蛋）</label><br></h2>
-              <label><input type="radio" name="q23" />(1) 每天吃 <input type="number" name="q23_1" />顆</label><br>
-              <label><input type="radio" name="q23" />(2) 每星期吃 <input type="number" name="q23_2" />顆</label><br>
-              <label><input type="radio" name="q23" />(3) 每月吃 <input type="number" name="q23_3" />顆</label><br>
+              <label><input type="radio" name="q23" />(1) 每天吃 <input type="number" name="q23_1" min="1" max="10"/>顆</label><br>
+              <label><input type="radio" name="q23" />(2) 每星期吃 <input type="number" name="q23_2" min="1" max="10"/>顆</label><br>
+              <label><input type="radio" name="q23" />(3) 每月吃 <input type="number" name="q23_3" min="1" max="10"/>顆</label><br>
               <label><input type="radio" name="q23" />(4) 都沒吃或一個月吃不到一杯 </label><br>
               <input type="button" name="previous" class="previous action-button" value="previous" />
               <input type="button" name="next" class="next action-button 23btn" value="Next" disabled='true'/>
@@ -401,9 +418,9 @@
             <h2 class="fs-title h2style">24. 請問您通常每天吃幾碗飯或粥？<br>
               <label class="ps">（例如白飯、糙米飯、炒飯、油飯、白粥、 廣東粥等）</label><br>
               <label class="ps">（一碗飯約 200 克，一碗飯＝一便當盒的飯＝一碗自助餐大碗飯）</label><br></h2>
-              <label><input type="radio" name="q24" onclick="open24a()"/>(1) 每天吃 <input type="number" name="q24_1"/>碗</label><br>
-              <label><input type="radio" name="q24" onclick="open24a()"/>(2) 每星期吃 <input type="number" name="q24_2"/>碗</label><br>
-              <label><input type="radio" name="q24" onclick="open24a()"/>(3) 每月吃 <input type="number" name="q24_3"/>碗</label><br>
+              <label><input type="radio" name="q24" onclick="open24a()"/>(1) 每天吃 <input type="number" name="q24_1" min="1" max="10"/>碗</label><br>
+              <label><input type="radio" name="q24" onclick="open24a()"/>(2) 每星期吃 <input type="number" name="q24_2" min="1" max="10"/>碗</label><br>
+              <label><input type="radio" name="q24" onclick="open24a()"/>(3) 每月吃 <input type="number" name="q24_3" min="1" max="10"/>碗</label><br>
               <label><input type="radio" name="q24" onclick="close24a()"/>(4) 都沒吃或一個月吃不到一碗 </label><br>
               <!-- 24a -->
               <div class="jump24a">
@@ -422,9 +439,9 @@
           <!-- 25 -->
           <fieldset>
             <h2 class="fs-title h2style">25. 請問您通常每天吃幾碗麵、麵線、米粉、冬粉、板條、速食麵等麵類？</h2>
-              <label><input type="radio" name="q25" onclick="open25a()"/>(1) 每天吃 <input type="number" name="q25_1" />碗</label><br>
-              <label><input type="radio" name="q25" onclick="open25a()"/>(2) 每星期吃 <input type="number" name="q25_2" />碗</label><br>
-              <label><input type="radio" name="q25" onclick="open25a()"/>(3) 每月吃 <input type="number" name="q25_3" />碗</label><br>
+              <label><input type="radio" name="q25" onclick="open25a()"/>(1) 每天吃 <input type="number" name="q25_1" min="1" max="10"/>碗</label><br>
+              <label><input type="radio" name="q25" onclick="open25a()"/>(2) 每星期吃 <input type="number" name="q25_2" min="1" max="10"/>碗</label><br>
+              <label><input type="radio" name="q25" onclick="open25a()"/>(3) 每月吃 <input type="number" name="q25_3" min="1" max="10"/>碗</label><br>
               <label><input type="radio" name="q25" onclick="close25a()"/>(4) 都沒吃或一個月吃不到一碗 </label><br>
               <!-- 25a -->
               <div class="jump25a">
@@ -444,9 +461,15 @@
           <fieldset>
             <h2 class="fs-title h2style">26. 請問通常您多久吃幾個（片）土司、麵包、饅頭、包子等？<br>
               <label class="ps">(若只單吃一項，另一項請填0)</label></h2>
-              <label><input type="radio" name="q26" onclick="open26a()"/>(1) 每天吃 <input type="number" name="q26_1_1" class="input26"/>片吐司與<input type="number" name="q26_1_2" class="input26"/>個麵包、饅頭、包子</label><br>
-              <label><input type="radio" name="q26" onclick="open26a()"/>(2) 每星期吃 <input type="number" name="q26_2_1" class="input26"/>片吐司與<input type="number" name="q26_2_2" class="input26"/>個麵包、饅頭、包子</label><br>
-              <label><input type="radio" name="q26" onclick="open26a()"/>(3) 每月吃 <input type="number" name="q26_3_1" class="input26"/>片吐司與<input type="number" name="q26_2_3" class="input26"/>個麵包、饅頭、包子</label><br>
+              <label><input type="radio" name="q26" onclick="open26a()"/>(1) 每天吃 <input type="number" name="q26_1_1" class="input26" min="1" max="10"/>片吐司與
+                <input type="number" name="q26_1_2" class="input26" min="1" max="10"/>個麵包、饅頭、包子</label><br>
+
+              <label><input type="radio" name="q26" onclick="open26a()"/>(2) 每星期吃 <input type="number" name="q26_2_1" class="input26" min="1" max="10"/>片吐司與
+                <input type="number" name="q26_2_2" class="input26" min="1" max="10"/>個麵包、饅頭、包子</label><br>
+
+              <label><input type="radio" name="q26" onclick="open26a()"/>(3) 每月吃 <input type="number" name="q26_3_1" class="input26" min="1" max="10"/>片吐司與
+                <input type="number" name="q26_2_3" class="input26" min="1" max="10"/>個麵包、饅頭、包子</label><br>
+
               <label><input type="radio" name="q26" onclick="close26a()"/>(4) 都沒吃或一個月吃不到一碗 </label><br>
               <!-- 26a -->
               <div class="jump26a">
@@ -465,9 +488,9 @@
           <!-- 27 -->
           <fieldset>
             <h2 class="fs-title h2style">27. 請問您通常多久吃幾個水餃、蒸餃、鍋貼、水晶餃、餛飩、燒賣等？</h2>
-              <label><input type="radio" name="q27"/>(1) 每天吃 <input type="number" name="q27_1"/>個</label><br>
-              <label><input type="radio" name="q27"/>(2) 每星期吃 <input type="number" name="q27_2"/>個</label><br>
-              <label><input type="radio" name="q27"/>(3) 每月吃 <input type="number" name="q27_3"/>個</label><br>
+              <label><input type="radio" name="q27"/>(1) 每天吃 <input type="number" name="q27_1" min="1" max="10"/>個</label><br>
+              <label><input type="radio" name="q27"/>(2) 每星期吃 <input type="number" name="q27_2" min="1" max="10"/>個</label><br>
+              <label><input type="radio" name="q27"/>(3) 每月吃 <input type="number" name="q27_3" min="1" max="10"/>個</label><br>
               <label><input type="radio" name="q27"/>(4) 都沒吃或一個月吃不到一個 </label><br>
               <input type="button" name="previous" class="previous action-button" value="previous" />
               <input type="button" name="next" class="next action-button 27btn" value="Next" disabled='true'/>
@@ -475,9 +498,9 @@
           <!-- 28 -->
           <fieldset>
             <h2 class="fs-title h2style">28. 請問您通常多久吃幾個蛋餅、蔥油餅、潤餅、大餅、燒餅等餅類？</h2>
-              <label><input type="radio" name="q28"/>(1) 每天吃 <input type="number" name="q28_1"/>個</label><br>
-              <label><input type="radio" name="q28"/>(2) 每星期吃 <input type="number" name="q28_2"/>個</label><br>
-              <label><input type="radio" name="q28"/>(3) 每月吃 <input type="number" name="q28_3"/>個</label><br>
+              <label><input type="radio" name="q28"/>(1) 每天吃 <input type="number" name="q28_1" min="1" max="10"/>個</label><br>
+              <label><input type="radio" name="q28"/>(2) 每星期吃 <input type="number" name="q28_2" min="1" max="10"/>個</label><br>
+              <label><input type="radio" name="q28"/>(3) 每月吃 <input type="number" name="q28_3" min="1" max="10"/>個</label><br>
               <label><input type="radio" name="q28"/>(4) 都沒吃或一個月吃不到一個 </label><br>
               <input type="button" name="previous" class="previous action-button" value="previous" />
               <input type="button" name="next" class="next action-button 28btn" value="Next" disabled='true'/>
@@ -514,11 +537,11 @@
           <fieldset>
             <h2 class="fs-title h2style">30. 請問您最近一個月中，通常一星期有幾天吃早餐？<br>
             <label class="ps">（出外用餐或買外帶食物都算）</label></h2>
-              <label><input type="radio" name="q30" />(1) 幾乎每天都吃早餐，其中有 </label><input type="number" name="no29t" class="input29"/><label>天的早餐是外食</label><br>
-              <label><input type="radio" name="q30" />(2) 每星期有 5-6 天會吃早餐，其中有 <input type="number" name="q30_1"class="input29"/>天的早餐是外食</label><br>
-              <label><input type="radio" name="q30" />(3) 每星期有 3-4 天會吃早餐，其中有 <input type="number" name="q30_2"class="input29"/>天的早餐是外食</label><br>
-              <label><input type="radio" name="q30" />(4) 每星期有 1-2 天會吃早餐，其中有 <input type="number" name="q30_3"class="input29"/>天的早餐是外食</label><br>
-              <label><input type="radio" name="q30" />(5) 每個月有 1-3 天會吃早餐，其中有 <input type="number" name="q30_4"class="input29"/>天的早餐是外食</label><br>
+              <label><input type="radio" name="q30" />(1) 幾乎每天都吃早餐，其中有 </label><input type="number" name="no29t" class="input29" min="1" max="7"/><label>天的早餐是外食</label><br>
+              <label><input type="radio" name="q30" />(2) 每星期有 5-6 天會吃早餐，其中有 <input type="number" name="q30_1"class="input29" min="1" max="7"/>天的早餐是外食</label><br>
+              <label><input type="radio" name="q30" />(3) 每星期有 3-4 天會吃早餐，其中有 <input type="number" name="q30_2"class="input29" min="1" max="7"/>天的早餐是外食</label><br>
+              <label><input type="radio" name="q30" />(4) 每星期有 1-2 天會吃早餐，其中有 <input type="number" name="q30_3"class="input29" min="1" max="7"/>天的早餐是外食</label><br>
+              <label><input type="radio" name="q30" />(5) 每個月有 1-3 天會吃早餐，其中有 <input type="number" name="q30_4"class="input29" min="1" max="31"/>天的早餐是外食</label><br>
               <label><input type="radio" name="q30" />(6) 幾乎都不吃早餐 </label><br>
               <input type="button" name="previous" class="previous action-button" value="previous" />
               <input type="button" name="next" class="next action-button 30btn" value="Next" disabled='true'/>
@@ -527,11 +550,11 @@
           <fieldset>
             <h2 class="fs-title h2style">31. 請問您最近一個月中，通常一星期有幾天吃午餐？<br>
             <label class="ps">（出外用餐或買外帶食物都算）</label></h2>
-              <label><input type="radio" name="q31" />(1) 幾乎每天都吃午餐，其中有 </label><input type="number" name="q31_1" class="input30"/><label>天的午餐是外食</label><br>
-              <label><input type="radio" name="q31" />(2) 每星期有 5-6 天會吃午餐，其中有 <input type="number" name="q31_2"class="input30"/>天的午餐是外食</label><br>
-              <label><input type="radio" name="q31" />(3) 每星期有 3-4 天會吃午餐，其中有 <input type="number" name="q31_3"class="input30"/>天的午餐是外食</label><br>
-              <label><input type="radio" name="q31" />(4) 每星期有 1-2 天會吃午餐，其中有 <input type="number" name="q31_4"class="input30"/>天的午餐是外食</label><br>
-              <label><input type="radio" name="q31" />(5) 每個月有 1-3 天會吃午餐，其中有 <input type="number" name="q31_5"class="input30"/>天的午餐是外食</label><br>
+              <label><input type="radio" name="q31" />(1) 幾乎每天都吃午餐，其中有 </label><input type="number" name="q31_1" class="input30" min="1" max="7"/><label>天的午餐是外食</label><br>
+              <label><input type="radio" name="q31" />(2) 每星期有 5-6 天會吃午餐，其中有 <input type="number" name="q31_2"class="input30" min="1" max="7"/>天的午餐是外食</label><br>
+              <label><input type="radio" name="q31" />(3) 每星期有 3-4 天會吃午餐，其中有 <input type="number" name="q31_3"class="input30" min="1" max="7"/>天的午餐是外食</label><br>
+              <label><input type="radio" name="q31" />(4) 每星期有 1-2 天會吃午餐，其中有 <input type="number" name="q31_4"class="input30" min="1" max="7"/>天的午餐是外食</label><br>
+              <label><input type="radio" name="q31" />(5) 每個月有 1-3 天會吃午餐，其中有 <input type="number" name="q31_5"class="input30" min="1" max="31"/>天的午餐是外食</label><br>
               <label><input type="radio" name="q31" />(6) 幾乎都不吃午餐 </label><br>
               <input type="button" name="previous" class="previous action-button" value="previous" />
               <input type="button" name="next" class="next action-button 31btn" value="Next" disabled='true'/>
@@ -541,10 +564,10 @@
             <h2 class="fs-title h2style">32. 請問您最近一個月中，通常一星期有幾天吃晚餐？<br>
             <label class="ps">（出外用餐或買外帶食物都算）</label></h2>
               <label><input type="radio" name="q32" />(1) 幾乎每天都吃晚餐，其中有 </label><input type="number" name="q32_1" class="input31"/><label>天的晚餐是外食</label><br>
-              <label><input type="radio" name="q32" />(2) 每星期有 5-6 天會吃晚餐，其中有 <input type="number" name="q32_2"class="input31"/>天的晚餐是外食</label><br>
-              <label><input type="radio" name="q32" />(3) 每星期有 3-4 天會吃晚餐，其中有 <input type="number" name="q32_3"class="input31"/>天的晚餐是外食</label><br>
-              <label><input type="radio" name="q32" />(4) 每星期有 1-2 天會吃晚餐，其中有 <input type="number" name="q32_4"class="input31"/>天的晚餐是外食</label><br>
-              <label><input type="radio" name="q32" />(5) 每個月有 1-3 天會吃晚餐，其中有 <input type="number" name="q32_5"class="input31"/>天的晚餐是外食</label><br>
+              <label><input type="radio" name="q32" />(2) 每星期有 5-6 天會吃晚餐，其中有 <input type="number" name="q32_2"class="input31" min="1" max="7"/>天的晚餐是外食</label><br>
+              <label><input type="radio" name="q32" />(3) 每星期有 3-4 天會吃晚餐，其中有 <input type="number" name="q32_3"class="input31" min="1" max="7"/>天的晚餐是外食</label><br>
+              <label><input type="radio" name="q32" />(4) 每星期有 1-2 天會吃晚餐，其中有 <input type="number" name="q32_4"class="input31" min="1" max="7"/>天的晚餐是外食</label><br>
+              <label><input type="radio" name="q32" />(5) 每個月有 1-3 天會吃晚餐，其中有 <input type="number" name="q32_5"class="input31" min="1" max="31"/>天的晚餐是外食</label><br>
               <label><input type="radio" name="q32" />(6) 幾乎都不吃晚餐 </label><br>
               <input type="button" name="previous" class="previous action-button" value="previous" />
               <input type="button" name="next" class="next action-button 32btn" value="Next" disabled='true'/>
@@ -559,9 +582,9 @@
           <fieldset>
             <h2 class="fs-title h2style">33. 請問您最近一個月中，通常吃幾道用油炒或燴的菜餚？<br>
               <label class="ps">（包含所有炒或燴的菜餚與炒飯、炒麵等）</label></h2>
-              <label><input type="radio" name="q33" />(1) 每天吃 <input type="number" name="q33_1"/>道</label><br>
-              <label><input type="radio" name="q33" />(2) 每星期吃 <input type="number" name="q33_2"/>道</label><br>
-              <label><input type="radio" name="q33" />(3) 每月吃 <input type="number" name="q33_3"/>道</label><br>
+              <label><input type="radio" name="q33" />(1) 每天吃 <input type="number" name="q33_1" min="1" max="10"/>道</label><br>
+              <label><input type="radio" name="q33" />(2) 每星期吃 <input type="number" name="q33_2" min="1" max="10"/>道</label><br>
+              <label><input type="radio" name="q33" />(3) 每月吃 <input type="number" name="q33_3" min="1" max="10"/>道</label><br>
               <label><input type="radio" name="q33" />(4) 都沒吃或一個月吃不到一道 </label><br>
               <input type="button" name="previous" class="previous action-button" value="previous" />
               <input type="button" name="next" class="next action-button 33btn" value="Next" disabled='true'/>
@@ -570,9 +593,9 @@
           <fieldset>
             <h2 class="fs-title h2style">34. 請問您最近一個月中，通常吃幾道用油炸的菜餚？<br>
               <label class="ps">（包含所有炒或燴的菜餚與炒飯、炒麵等）</label></h2>
-              <label><input type="radio" name="q34" />(1) 每天吃 <input type="number" name="q34_1"/>道</label><br>
-              <label><input type="radio" name="q34" />(2) 每星期吃 <input type="number" name="q34_2"/>道</label><br>
-              <label><input type="radio" name="q34" />(3) 每月吃 <input type="number" name="q34_3"/>道</label><br>
+              <label><input type="radio" name="q34" />(1) 每天吃 <input type="number" name="q34_1" min="1" max="10"/>道</label><br>
+              <label><input type="radio" name="q34" />(2) 每星期吃 <input type="number" name="q34_2" min="1" max="10"/>道</label><br>
+              <label><input type="radio" name="q34" />(3) 每月吃 <input type="number" name="q34_3" min="1" max="10"/>道</label><br>
               <label><input type="radio" name="q34" />(4) 都沒吃或一個月吃不到一道 </label><br>
               <input type="button" name="previous" class="previous action-button" value="previous" />
               <input type="button" name="next" class="next action-button 34btn" value="Next" disabled='true'/>
