@@ -18,19 +18,41 @@ $("input[name='Q01']").click(function(){
     $('.1btn').attr('disabled',false);
    }
 });
-
-$("input[name='Q02']").click(function(){
-    var qa1val = $("input[name=Q02]:checked");
-    if(qa1val.val() !==''){
+// 2*************************************
+$("input[name='q02']").click(function(){
+    var qa2val = $("input[name=q02]:checked");
+    if(qa2val.val() =='1'){
     $('.2btn').attr('disabled',false);
    }
 });
+$(".q02c").click(function(){
+    var q02a =$(".q02a").val();
+    var q02b =$(".q02b").val();
+    var q02c =$(".q02c").val();
+    var judge =(q02a !=='' && q02b !=='' && q02c !=='')
+    console.log(judge);
+    if(judge){
+        $('.2btn').attr('disabled',false);
+    }
+});
+
+
+
+
 
 $("input[name='q03']").click(function(){
     var qa1val = $("input[name=q03]:checked");
-    if(qa1val.val() !==''){
+    if(qa1val.val() =='1'){
     $('.3btn').attr('disabled',false);
    }
+});
+$(".q03b").click(function(){
+    console.log(q03a);
+    var q03a =$(".q03a").val();
+    var q03b =$(".q03b").val();
+    if((q03a !=='' && q03b !=='')){
+        $('.3btn').attr('disabled',false);
+    }
 });
 
 $("input[name='q04']").click(function(){
@@ -279,6 +301,7 @@ $("input[name='q36']").click(function(){
     $('.36btn').attr('disabled',false);
    }
 });
+
 
 
 

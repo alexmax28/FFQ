@@ -161,14 +161,23 @@ label>span{
 	color:red;
 	font-size: 8px;
 }
-
-
-
-
 .jump2a,.jump3a,.jump4a,.jump11a,.jump12a,.jump15a,.jump18a,.jump21a,.jump22a,.jump24a,.jump25a,.jump26a{
 	display:none;
 	animation-name:show;
 	animation-duration:3s;
+}
+.table29{
+	border: 2px solid #000;
+}
+.tr29{
+	border-bottom: 2px solid #000;
+}
+#app{
+	background: #f1f1f1;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+	/* background-color: rgba(0,0,0,.05); */
+	background-color: white;
 }
 
 

@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css'/>
     <link rel="stylesheet" href="all.css">
-    <link rel="stylesheet" href="/css/ffq.css">
+    <!-- <link rel="stylesheet" href="/css/ffq.css"> -->
     <title>Document</title>
 </head>
 <body>
     <div id="app">
         <form id="msform">
+
           <!-- 1 -->
             <fieldset>
               <h2 class="fs-title h2style">1.請問您通常多久喝一次可樂、汽水、運動飲料、巧克力飲料、非 100％的加工果汁、冬瓜茶等含糖冷熱飲料？</h2>
@@ -24,34 +26,34 @@
             <!-- 2 -->
             <fieldset>
               <h2 class="fs-title h2style">2. 請問您通常多久喝一次咖啡？</h2>
-              <label><input type="radio" name="Q02" onclick='close2a()' value="1"/>(1) 都沒喝或一個月喝不到 1 次</label><br>
-              <label><input type="radio" name="Q02" onclick='open2a()' value="1"/>(2) 一個月喝 1-3 次</label><br>
-              <label><input type="radio" name="Q02" onclick='open2a()' value="1"/>(3) 每星期喝 1-2 次</label><br>
-              <label><input type="radio" name="Q02" onclick='open2a()' value="1"/>(4) 每星期喝 3-4 次</label><br>
-              <label><input type="radio" name="Q02" onclick='open2a()' value="1"/>(5) 每星期喝 5-6 次</label><br>
-              <label><input type="radio" name="Q02" onclick='open2a()' value="6"/>(6) 每天喝<input type="number" name="q02_6" min="1" max="10"/>次</label><br>
+              <label><input type="radio" name="q02" onclick='close2a()'value="1"/>(1) 都沒喝或一個月喝不到 1 次</label><br>
+              <label><input type="radio" name="q02" onclick='open2a()' value="2"/>(2) 一個月喝 1-3 次</label><br>
+              <label><input type="radio" name="q02" onclick='open2a()' value="3"/>(3) 每星期喝 1-2 次</label><br>
+              <label><input type="radio" name="q02" onclick='open2a()' value="4"/>(4) 每星期喝 3-4 次</label><br>
+              <label><input type="radio" name="q02" onclick='open2a()' value="5"/>(5) 每星期喝 5-6 次</label><br>
+              <label><input type="radio" name="q02" onclick='open2a()' value="6"/>(6) 每天喝<input type="number" name="q02_6" min="1" max="10"/>次</label><br>
               <div class="jump2a">
                 <br>
               <h2 class="fs-title h2style " >2a. 請問您喝的咖啡是否加奶精（三合一咖啡算是有加奶精）？</h2><br>
-              <label><input type="radio" name="q02a" />(1) 總是加奶精</label><br>
-              <label><input type="radio" name="q02a" />(2) 大多會加奶精</label><br>
-              <label><input type="radio" name="q02a" />(3) 一半一半</label><br>
-              <label><input type="radio" name="q02a" />(4) 少數會加奶精</label><br>
-              <label><input type="radio" name="q02a" />(5) 都不加奶精</label><br>
+              <label><input type="radio" name="q02a" class="q02a" value="1"/>(1) 總是加奶精</label><br>
+              <label><input type="radio" name="q02a" class="q02a" value="2"/>(2) 大多會加奶精</label><br>
+              <label><input type="radio" name="q02a" class="q02a" value="3"/>(3) 一半一半</label><br>
+              <label><input type="radio" name="q02a" class="q02a" value="4"/>(4) 少數會加奶精</label><br>
+              <label><input type="radio" name="q02a" class="q02a" value="5"/>(5) 都不加奶精</label><br>
               <br>
               <h2 class="fs-title h2style">2b. 請問您喝的咖啡是否是低咖啡因咖啡？</h2><br>
-              <label><input type="radio" name="q02b"/>(1) 總是</label><br>
-              <label><input type="radio" name="q02b"/>(2) 大多是</label><br>
-              <label><input type="radio" name="q02b"/>(3) 一半一半</label><br>
-              <label><input type="radio" name="q02b"/>(4) 少數是</label><br>
-              <label><input type="radio" name="q02b"/>(5) 都不是</label><br>
+              <label><input type="radio" name="q02b" class="q02b" value="1"/>(1) 總是</label><br>
+              <label><input type="radio" name="q02b" class="q02b" value="2"/>(2) 大多是</label><br>
+              <label><input type="radio" name="q02b" class="q02b" value="3"/>(3) 一半一半</label><br>
+              <label><input type="radio" name="q02b" class="q02b" value="4"/>(4) 少數是</label><br>
+              <label><input type="radio" name="q02b" class="q02b" value="5"/>(5) 都不是</label><br>
               <br>
               <h2 class="fs-title h2style">2c. 請問您喝的咖啡是甜的嗎？</h2><br>
-              <label><input type="radio" name="q02c" />(1) 總是甜的 </label><br>
-              <label><input type="radio" name="q02c" />(2) 大多是甜的 </label><br>
-              <label><input type="radio" name="q02c" />(3) 一半一半 </label><br>
-              <label><input type="radio" name="q02c" />(4) 少數是甜的 </label><br>
-              <label><input type="radio" name="q02c" />(5) 都不是甜的 </label><br>
+              <label><input type="radio" name="q02c" class="q02c" value="1"/>(1) 總是甜的 </label><br>
+              <label><input type="radio" name="q02c" class="q02c" value="2"/>(2) 大多是甜的 </label><br>
+              <label><input type="radio" name="q02c" class="q02c" value="3"/>(3) 一半一半 </label><br>
+              <label><input type="radio" name="q02c" class="q02c" value="4"/>(4) 少數是甜的 </label><br>
+              <label><input type="radio" name="q02c" class="q02c" value="5"/>(5) 都不是甜的 </label><br>
             </div>
 
               <input type="button" name="previous" class="previous action-button" value="previous" />
@@ -71,19 +73,19 @@
                 <br>
               <h2 class="fs-title h2style " >3a. 請問您喝的茶是否加奶精？<br>
                 <label class="ps">（如果您喝的是加鮮奶的鮮奶茶，此題請選擇不加奶精。從鮮奶茶喝到鮮奶的頻率與份量請回答在第21題：請問您通常多久喝一杯牛奶？）</label></h2>
-              <label><input type="radio" name="no3a" />(1) 總是加奶精</label><br>
-              <label><input type="radio" name="no3a" />(2) 大多會加奶精</label><br>
-              <label><input type="radio" name="no3a" />(3) 一半一半</label><br>
-              <label><input type="radio" name="no3a" />(4) 少數會加奶精</label><br>
-              <label><input type="radio" name="no3a" />(5) 都不加奶精</label><br>
+              <label><input type="radio" name="no3a" class="q03a" value="1"/>(1) 總是加奶精</label><br>
+              <label><input type="radio" name="no3a" class="q03a" value="1"/>(2) 大多會加奶精</label><br>
+              <label><input type="radio" name="no3a" class="q03a" value="1"/>(3) 一半一半</label><br>
+              <label><input type="radio" name="no3a" class="q03a" value="1"/>(4) 少數會加奶精</label><br>
+              <label><input type="radio" name="no3a" class="q03a" value="1"/>(5) 都不加奶精</label><br>
               <br>
               <h2 class="fs-title h2style">3b. 請問您喝的茶或奶茶是甜的嗎？<br>
                 <label class="ps">（如果您喝的是加鮮奶的鮮奶茶，此題請選擇不加奶精。從鮮奶茶喝到鮮奶的頻率與份量請回答在第21題：請問您通常多久喝一杯牛奶？）</label></h2>
-              <label><input type="radio" name="no3b" />(1) 總是甜的</label><br>
-              <label><input type="radio" name="no3b" />(2) 大多是甜的</label><br>
-              <label><input type="radio" name="no3b" />(3) 一半一半</label><br>
-              <label><input type="radio" name="no3b" />(4) 少數是甜的</label><br>
-              <label><input type="radio" name="no3b" />(5) 都不是甜的</label><br>
+              <label><input type="radio" name="no3b" class="q03b" value="1"/>(1) 總是甜的</label><br>
+              <label><input type="radio" name="no3b" class="q03b" value="1"/>(2) 大多是甜的</label><br>
+              <label><input type="radio" name="no3b" class="q03b" value="1"/>(3) 一半一半</label><br>
+              <label><input type="radio" name="no3b" class="q03b" value="1"/>(4) 少數是甜的</label><br>
+              <label><input type="radio" name="no3b" class="q03b" value="1"/>(5) 都不是甜的</label><br>
             </div>
             <input type="button" name="previous" class="previous action-button" value="previous" />
             <input type="button" name="next" class="next action-button 3btn" value="Next"  disabled='true'/>
@@ -271,17 +273,17 @@
             <div class="jump15a">
               <br>
              <h2 class="fs-title h2style " >15a. 請問您常吃的海鮮類是？<label class="ps">（可複選）</label></h2>
-            <label><input type="checkbox" name="q15a_01" class="q15a" value="01"/>(01)花枝/烏賊/魷魚/小管/章魚類</label><br>
-            <label><input type="checkbox" name="q15a_02" class="q15a"value="02"/>(02)蛤蜊/蜆/海瓜子類</label><br>
-            <label><input type="checkbox" name="q15a_03" class="q15a"value="03"/>(03)牡蠣/蚵</label><br>
-            <label><input type="checkbox" name="q15a_04" class="q15a"value="04"/>(04)蝦子</label><br>
-            <label><input type="checkbox" name="q15a_05" class="q15a"value="05"/>(05)蝦米</label><br>
-            <label><input type="checkbox" name="q15a_06" class="q15a"value="06"/>(06)螃蟹</label><br>
-            <label><input type="checkbox" name="q15a_07" class="q15a"value="07"/>(07)干貝</label><br>
-            <label><input type="checkbox" name="q15a_08" class="q15a"value="08"/>(08)螺類</label><br>
-            <label><input type="checkbox" name="q15a_09" class="q15a"value="09"/>(09)鮑魚</label><br>
-            <label><input type="checkbox" name="q15a_10" class="q15a"value="10"/>(10)龍蝦</label><br>
-            <label><input type="checkbox" name="q15a_11" class="q15a"value="11"/>(11)蝸牛肉</label><br>
+            <label><input type="checkbox" name="q15a[]"  class="q15a" value="F01">(01)花枝/烏賊/魷魚/小管/章魚類</label><br>
+            <label><input type="checkbox" name="q15a[]"  class="q15a" value="F02">(02)蛤蜊/蜆/海瓜子類</label><br>
+            <label><input type="checkbox" name="q15a[]"  class="q15a" value="F03">(03)牡蠣/蚵</label><br>
+            <label><input type="checkbox" name="q15a[]"  class="q15a" value="F04">(04)蝦子</label><br>
+            <label><input type="checkbox" name="q15a[]"  class="q15a" value="F05">(05)蝦米</label><br>
+            <label><input type="checkbox" name="q15a[]"  class="q15a" value="F06">(06)螃蟹</label><br>
+            <label><input type="checkbox" name="q15a[]"  class="q15a" value="F07">(07)干貝</label><br>
+            <label><input type="checkbox" name="q15a[]"  class="q15a" value="F08">(08)螺類</label><br>
+            <label><input type="checkbox" name="q15a[]"  class="q15a" value="F09">(09)鮑魚</label><br>
+            <label><input type="checkbox" name="q15a[]"  class="q15a" value="F10">(10)龍蝦</label><br>
+            <label><input type="checkbox" name="q15a[]"  class="q15a" value="F11">(11)蝸牛肉</label><br>
             <br>
             </div>    
             <input type="button" name="previous" class="previous action-button" value="previous" />
@@ -325,15 +327,15 @@
             <div class="jump18a">
               <br>
              <h2 class="fs-title h2style " >18a. 請問您常吃的海鮮類是？<label class="ps">（可複選）</label></h2>
-            <label><input type="checkbox" name="q18a_01" class="q18a" value="01"/>(01)花生</label><br>
-            <label><input type="checkbox" name="q18a_02" class="q18a" value="02"/>(02)芝麻</label><br>
-            <label><input type="checkbox" name="q18a_03" class="q18a" value="03"/>(03)黑瓜子</label><br>
-            <label><input type="checkbox" name="q18a_04" class="q18a" value="04"/>(04)白瓜子</label><br>
-            <label><input type="checkbox" name="q18a_05" class="q18a" value="05"/>(05)葵瓜子</label><br>
-            <label><input type="checkbox" name="q18a_06" class="q18a" value="06"/>(06)腰果</label><br>
-            <label><input type="checkbox" name="q18a_07" class="q18a" value="07"/>(07)杏仁果</label><br>
-            <label><input type="checkbox" name="q18a_08" class="q18a" value="08"/>(08)開心果</label><br>
-            <label><input type="checkbox" name="q18a_09" class="q18a" value="09"/>(09)核桃</label><br>
+            <label><input type="checkbox" name="q18a[]" class="q18a" value="G01">(01)花生</label><br>
+            <label><input type="checkbox" name="q18a[]" class="q18a" value="G02">(02)芝麻</label><br>
+            <label><input type="checkbox" name="q18a[]" class="q18a" value="G03">(03)黑瓜子</label><br>
+            <label><input type="checkbox" name="q18a[]" class="q18a" value="G04">(04)白瓜子</label><br>
+            <label><input type="checkbox" name="q18a[]" class="q18a" value="G05">(05)葵瓜子</label><br>
+            <label><input type="checkbox" name="q18a[]" class="q18a" value="G06">(06)腰果</label><br>
+            <label><input type="checkbox" name="q18a[]" class="q18a" value="G07">(07)杏仁果</label><br>
+            <label><input type="checkbox" name="q18a[]" class="q18a" value="G08">(08)開心果</label><br>
+            <label><input type="checkbox" name="q18a[]" class="q18a" value="G09">(09)核桃</label><br>
             <br>
             </div>    
             <input type="button" name="previous" class="previous action-button" value="previous" />
@@ -506,31 +508,36 @@
               <input type="button" name="next" class="next action-button 28btn" value="Next" disabled='true'/>
           </fieldset>
 
-          <!-- 29 飲酒題************************************************************************* 11/10做到這-->
+          <!-- 29 飲酒題************************************************************************* 11/12做到這-->
           <fieldset>
             <h2 class="fs-title h2style">29. 請問您過去一個月最常喝的酒類？（最多勾選2種）</h2>
-            <label><input type="checkbox" name="q29" value="01"/>(1)沒有喝酒的習慣</label><br>
-            <label><input type="checkbox" name="q29" value="01"/>(2)啤酒<span>（酒精濃度：3.5-4.5％）</span></label><br>
-            <label><input type="checkbox" name="q29" value="01"/>(3)水果酒<span>（紅、白葡萄酒、梅酒等）（酒精濃度：10-13％）</span></label><br>
-            <label><input type="checkbox" name="q29" value="01"/>(4)白蘭地、威士忌、蘭姆酒、伏特加、琴酒、龍舌蘭<span>（酒精濃度：40％）</span></label><br>
-            <label><input type="checkbox" name="q29" value="01"/>(5)高梁、大麴、茅台酒<span>（酒精濃度：55-65％）</span></label><br>
-            <label><input type="checkbox" name="q29" value="01"/>(6)維士比、保力達<span>（酒精濃度：8-10％）</span></label><br>
-            <label><input type="checkbox" name="q29" value="01"/>(7)米酒、米酒頭<span>（酒精濃度：22％）</span></label><br>
-            <label><input type="checkbox" name="q29" value="01"/>(8)調酒<span>（酒精濃度：10-30％）</span></label><br>
-            <label><input type="checkbox" name="q29" value="01"/>(9)沙瓦類調酒<span>（例如：冰火）（酒精濃度：3.5-4.5％）</span></label><br>
-            <label><input type="checkbox" name="q29" value="01"/>(10)再製酒<span>（例如：五加皮、竹葉青、百歲酒、龍鳳酒、玫瑰露）（酒精濃度：35-48％）</span></label><br>
-            <label><input type="checkbox" name="q29" value="01"/>(11)清酒<span>（酒精濃度：14-16％）</span></label><br>
-            <label><input type="checkbox" name="q29" value="01"/>(12)花雕酒、紹興酒、紅露酒、黃酒<span>（酒精濃度：16-18％）</span></label><br>
-            <label><input type="checkbox" name="q29" value="01"/>(13)鹿茸酒、蔘茸酒、各式藥酒類<span>（酒精濃度：30％）</span></label><br>
-            <label><input type="checkbox" name="q29" value="01"/>(14)小米酒<span>（酒精濃度：8-10％）</span></label><br>
-            <label><input type="checkbox" name="q29" value="01"/>(15)香檳、氣泡酒<span>（酒精濃度：10-15％）</span></label><br>
-            <label><input type="checkbox" name="q29" value="01"/>(16)韓國燒酒、真露<span>（酒精濃度：14-20％）</span>​</label><br>
-            <label><input type="checkbox" name="q29" value="01"/>(17)烏梅酒、賓樂酒<span>（酒精濃度：16-18％）</span>​</label><br>
-            <label><input type="checkbox" name="q29" value="01"/>(18)奶酒<span>（酒精濃度：17％）​</span></label><br>
-            
+              <label class="ps"></label></h2>
+              <table class="table table-striped">
+                <tbody>
+                  <tr><td><input type="checkbox" name='q29' id="tr29_1"></td><td><label for="tr29_1">(1)沒有喝酒的習慣</label></td></tr>
+                  <tr><td><input type="checkbox" name='q29' id="tr29_2"></td><td><label for="tr29_2">(2)啤酒<span>（酒精濃度：3.5-4.5％）</span></label></td></tr>
+                  <tr><td><input type="checkbox" name='q29' id="tr29_3"></td><td><label for="tr29_3">(3)水果酒<span>（紅、白葡萄酒、梅酒等）（酒精濃度：10-13％）</span></label</td></tr>
+                  <tr><td><input type="checkbox" name='q29' id="tr29_4"></td><td><label for="tr29_4">(4)白蘭地、威士忌、蘭姆酒、伏特加、琴酒、龍舌蘭<span>（酒精濃度：40％）</span></label></td></tr>
+                  <tr><td><input type="checkbox" name='q29' id="tr29_5"></td><td><label for="tr29_5">(5)高梁、大麴、茅台酒<span>（酒精濃度：55-65％）</span></label></td></tr>
+                  <tr><td><input type="checkbox" name='q29' id="tr29_6"></td><td><label for="tr29_6">(6)維士比、保力達<span>（酒精濃度：8-10％）</span></label></td></tr>
+                  <tr><td><input type="checkbox" name='q29' id="tr29_7"></td><td><label for="tr29_7">(7)米酒、米酒頭<span>（酒精濃度：22％）</span></label></td></tr>
+                  <tr><td><input type="checkbox" name='q29' id="tr29_8"></td><td><label for="tr29_8">(8)調酒<span>（酒精濃度：10-30％）</span></label></td></tr>
+                  <tr><td><input type="checkbox" name='q29' id="tr29_9"></td><td><label for="tr29_9">(9)沙瓦類調酒<span>（例如：冰火）（酒精濃度：3.5-4.5％）</span></label></td></tr>
+                  <tr><td><input type="checkbox" name='q29' id="tr29_10"></td><td><label for="tr29_10">(10)再製酒<span>（例如：五加皮、竹葉青、百歲酒、龍鳳酒、玫瑰露）（酒精濃度：35-48％）</span></label></td></tr>
+                  <tr><td><input type="checkbox" name='q29' id="tr29_11"></td><td><label for="tr29_11">(11)清酒<span>（酒精濃度：14-16％）</span></label>​</td></tr>
+                  <tr><td><input type="checkbox" name='q29' id="tr29_12"></td><td><label for="tr29_12">(12)花雕酒、紹興酒、紅露酒、黃酒<span>（酒精濃度：16-18％）</span></label></td></tr>
+                  <tr><td><input type="checkbox" name='q29' id="tr29_13"></td><td><label for="tr29_13">(13)鹿茸酒、蔘茸酒、各式藥酒類<span>（酒精濃度：30％）</span></label>​</td></tr>
+                  <tr><td><input type="checkbox" name='q29' id="tr29_14"></td><td><label for="tr29_14">(14)小米酒<span>（酒精濃度：8-10％）</span></label></td></tr>
+                  <tr><td><input type="checkbox" name='q29' id="tr29_15"></td><td><label for="tr29_15">(15)香檳、氣泡酒<span>（酒精濃度：10-15％）</span></label></td></tr>
+                  <tr><td><input type="checkbox" name='q29' id="tr29_16"></td><td><label for="tr29_16">(16)韓國燒酒、真露<span>（酒精濃度：14-20％）</span></label></td></tr>
+                  <tr><td><input type="checkbox" name='q29' id="tr29_17"></td><td><label for="tr29_17">(17)烏梅酒、賓樂酒<span>（酒精濃度：16-18％）</span></label></td></tr>
+                  <tr><td><input type="checkbox" name='q29' id="tr29_18"></td><td><label for="tr29_18">(18)奶酒<span>（酒精濃度：17％）​</span></label></td></tr>
+                  
+                </tbody>
+              </table>
               <input type="button" name="previous" class="previous action-button" value="previous" />
               <input type="button" name="next" class="next action-button 29btn" value="Next" disabled='true'/>
-          </fieldset>
+        </fieldset>
 
 
           <!-- 30 -->
@@ -733,14 +740,15 @@
               <input type="button" name="previous" class="previous action-button" value="previous" />
               <input type="button" name="next" class="next action-button 36btn" value="Next" disabled='true'/>
         </fieldset>
-    
-          
+
+
     
           </form>
         </div>
     
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
     <script src="all.js"></script>
     <script src="select.js"></script>
 </body>
