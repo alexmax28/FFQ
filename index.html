@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css'/>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css"> -->
+
     <link rel="stylesheet" href="all.css">
     <!-- <link rel="stylesheet" href="/css/ffq.css"> -->
     <title>Document</title>
@@ -11,7 +13,7 @@
 <body>
     <div id="app">
         <form id="msform">
-
+       
           <!-- 1 -->
             <fieldset>
               <h2 class="fs-title h2style">1.請問您通常多久喝一次可樂、汽水、運動飲料、巧克力飲料、非 100％的加工果汁、冬瓜茶等含糖冷熱飲料？</h2>
@@ -463,16 +465,18 @@
           <fieldset>
             <h2 class="fs-title h2style">26. 請問通常您多久吃幾個（片）土司、麵包、饅頭、包子等？<br>
               <label class="ps">(若只單吃一項，另一項請填0)</label></h2>
-              <label><input type="radio" name="q26" onclick="open26a()"/>(1) 每天吃 <input type="number" name="q26_1_1" class="input26" min="1" max="10"/>片吐司與
-                <input type="number" name="q26_1_2" class="input26" min="1" max="10"/>個麵包、饅頭、包子</label><br>
+              <table class="table table-striped">
+              <tr><td><input type="radio" name="q26" id="q26_1" onclick="open26a()"/></td><td><label for="q26_1">(1) 每天吃 <input type="number" name="q26_1_1" class="input26" min="1" max="10" style="margin-bottom: 0;"/>片吐司與
+                <input type="number" name="q26_1_2" class="input26" min="1" max="10" style="margin-bottom: 0;"/>個麵包、饅頭、包子</label></td></tr>
 
-              <label><input type="radio" name="q26" onclick="open26a()"/>(2) 每星期吃 <input type="number" name="q26_2_1" class="input26" min="1" max="10"/>片吐司與
-                <input type="number" name="q26_2_2" class="input26" min="1" max="10"/>個麵包、饅頭、包子</label><br>
+              <tr><td><input type="radio" name="q26" id="q26_2" onclick="open26a()"/></td><td><label for="q26_2">(2) 每星期吃 <input type="number" name="q26_2_1" class="input26" min="1" max="10" style="margin-bottom: 0;"/>片吐司與
+                <input type="number" name="q26_2_2" class="input26" min="1" max="10" style="margin-bottom: 0;"/>個麵包、饅頭、包子</label></td></tr>
 
-              <label><input type="radio" name="q26" onclick="open26a()"/>(3) 每月吃 <input type="number" name="q26_3_1" class="input26" min="1" max="10"/>片吐司與
-                <input type="number" name="q26_2_3" class="input26" min="1" max="10"/>個麵包、饅頭、包子</label><br>
+              <tr><td><input type="radio" name="q26" id="q26_3" onclick="open26a()"/></td><td><label for="q26_3">(3) 每月吃 <input type="number" name="q26_3_1" class="input26" min="1" max="10" style="margin-bottom: 0;"/>片吐司與
+                <input type="number" name="q26_2_3" class="input26" min="1" max="10" style="margin-bottom: 0;"/>個麵包、饅頭、包子</label></td></tr>
 
-              <label><input type="radio" name="q26" onclick="close26a()"/>(4) 都沒吃或一個月吃不到一碗 </label><br>
+              <tr><td><input type="radio" name="q26" id="q26_4" onclick="close26a()"/></td><td><label for="q26_4">(4) 都沒吃或一個月吃不到一碗 </label></td></tr>
+            </table>
               <!-- 26a -->
               <div class="jump26a">
                 <br>
@@ -539,17 +543,18 @@
               <input type="button" name="next" class="next action-button 29btn" value="Next" disabled='true'/>
         </fieldset>
 
-
           <!-- 30 -->
           <fieldset>
             <h2 class="fs-title h2style">30. 請問您最近一個月中，通常一星期有幾天吃早餐？<br>
             <label class="ps">（出外用餐或買外帶食物都算）</label></h2>
-              <label><input type="radio" name="q30" />(1) 幾乎每天都吃早餐，其中有 </label><input type="number" name="no29t" class="input29" min="1" max="7"/><label>天的早餐是外食</label><br>
-              <label><input type="radio" name="q30" />(2) 每星期有 5-6 天會吃早餐，其中有 <input type="number" name="q30_1"class="input29" min="1" max="7"/>天的早餐是外食</label><br>
-              <label><input type="radio" name="q30" />(3) 每星期有 3-4 天會吃早餐，其中有 <input type="number" name="q30_2"class="input29" min="1" max="7"/>天的早餐是外食</label><br>
-              <label><input type="radio" name="q30" />(4) 每星期有 1-2 天會吃早餐，其中有 <input type="number" name="q30_3"class="input29" min="1" max="7"/>天的早餐是外食</label><br>
-              <label><input type="radio" name="q30" />(5) 每個月有 1-3 天會吃早餐，其中有 <input type="number" name="q30_4"class="input29" min="1" max="31"/>天的早餐是外食</label><br>
-              <label><input type="radio" name="q30" />(6) 幾乎都不吃早餐 </label><br>
+            <table class="table table-striped">
+              <tr><td><input type="radio" name="q30" id="q30_1"/></td><td><label for="q30_1">(1) 幾乎每天都吃早餐，其中有 <input type="number" name="no29t" class="input29" min="1" max="7"/>天的早餐是外食</label></td></tr>
+              <tr><td><input type="radio" name="q30" id="q30_2"/></td><td><label for="q30_2">(2) 每星期有 5-6 天會吃早餐，其中有 <input type="number" name="q30_1"class="input29" min="1" max="7"/>天的早餐是外食</label></td></tr>
+              <tr><td><input type="radio" name="q30" id="q30_3"/></td><td><label for="q30_3">(3) 每星期有 3-4 天會吃早餐，其中有 <input type="number" name="q30_2"class="input29" min="1" max="7"/>天的早餐是外食</label></td></tr>
+              <tr><td><input type="radio" name="q30" id="q30_4"/></td><td><label for="q30_4">(4) 每星期有 1-2 天會吃早餐，其中有 <input type="number" name="q30_3"class="input29" min="1" max="7"/>天的早餐是外食</label></td></tr>
+              <tr><td><input type="radio" name="q30" id="q30_5"/></td><td><label for="q30_5">(5) 每個月有 1-3 天會吃早餐，其中有 <input type="number" name="q30_4"class="input29" min="1" max="31"/>天的早餐是外食</label></td></tr>
+              <tr><td><input type="radio" name="q30" id="q30_6"/></td><td><label for="q30_6">(6) 幾乎都不吃早餐 </label></td></tr><br>
+            </table>
               <input type="button" name="previous" class="previous action-button" value="previous" />
               <input type="button" name="next" class="next action-button 30btn" value="Next" disabled='true'/>
           </fieldset>
@@ -557,12 +562,14 @@
           <fieldset>
             <h2 class="fs-title h2style">31. 請問您最近一個月中，通常一星期有幾天吃午餐？<br>
             <label class="ps">（出外用餐或買外帶食物都算）</label></h2>
-              <label><input type="radio" name="q31" />(1) 幾乎每天都吃午餐，其中有 </label><input type="number" name="q31_1" class="input30" min="1" max="7"/><label>天的午餐是外食</label><br>
-              <label><input type="radio" name="q31" />(2) 每星期有 5-6 天會吃午餐，其中有 <input type="number" name="q31_2"class="input30" min="1" max="7"/>天的午餐是外食</label><br>
-              <label><input type="radio" name="q31" />(3) 每星期有 3-4 天會吃午餐，其中有 <input type="number" name="q31_3"class="input30" min="1" max="7"/>天的午餐是外食</label><br>
-              <label><input type="radio" name="q31" />(4) 每星期有 1-2 天會吃午餐，其中有 <input type="number" name="q31_4"class="input30" min="1" max="7"/>天的午餐是外食</label><br>
-              <label><input type="radio" name="q31" />(5) 每個月有 1-3 天會吃午餐，其中有 <input type="number" name="q31_5"class="input30" min="1" max="31"/>天的午餐是外食</label><br>
-              <label><input type="radio" name="q31" />(6) 幾乎都不吃午餐 </label><br>
+            <table class="table table-striped">
+              <tr><td><input type="radio" name="q31" id="q31_1"/></td><td><label for="q31_1">(1) 幾乎每天都吃午餐，其中有 <input type="number" name="q31_1" class="input30" min="1" max="7" style="margin-bottom: 0;"/>天的午餐是外食</label></td></tr>
+              <tr><td><input type="radio" name="q31" id="q31_2"/></td><td><label for="q31_2">(2) 每星期有 5-6 天會吃午餐，其中有 <input type="number" name="q31_2"class="input30" min="1" max="7" style="margin-bottom: 0;"/>天的午餐是外食</label></td></tr>
+              <tr><td><input type="radio" name="q31" id="q31_3"/></td><td><label for="q31_3">(3) 每星期有 3-4 天會吃午餐，其中有 <input type="number" name="q31_3"class="input30" min="1" max="7" style="margin-bottom: 0;"/>天的午餐是外食</label></td></tr>
+              <tr><td><input type="radio" name="q31" id="q31_4"/></td><td><label for="q31_4">(4) 每星期有 1-2 天會吃午餐，其中有 <input type="number" name="q31_4"class="input30" min="1" max="7" style="margin-bottom: 0;"/>天的午餐是外食</label></td></tr>
+              <tr><td><input type="radio" name="q31" id="q31_5"/></td><td><label for="q31_5">(5) 每個月有 1-3 天會吃午餐，其中有 <input type="number" name="q31_5"class="input30" min="1" max="31" style="margin-bottom: 0;"/>天的午餐是外食</label></td></tr>
+              <tr><td><input type="radio" name="q31" id="q31_6"/></td><td><label for="q31_6">(6) 幾乎都不吃午餐 </label><br>
+            </table>
               <input type="button" name="previous" class="previous action-button" value="previous" />
               <input type="button" name="next" class="next action-button 31btn" value="Next" disabled='true'/>
           </fieldset>
@@ -570,15 +577,18 @@
           <fieldset>
             <h2 class="fs-title h2style">32. 請問您最近一個月中，通常一星期有幾天吃晚餐？<br>
             <label class="ps">（出外用餐或買外帶食物都算）</label></h2>
-              <label><input type="radio" name="q32" />(1) 幾乎每天都吃晚餐，其中有 </label><input type="number" name="q32_1" class="input31"/><label>天的晚餐是外食</label><br>
-              <label><input type="radio" name="q32" />(2) 每星期有 5-6 天會吃晚餐，其中有 <input type="number" name="q32_2"class="input31" min="1" max="7"/>天的晚餐是外食</label><br>
-              <label><input type="radio" name="q32" />(3) 每星期有 3-4 天會吃晚餐，其中有 <input type="number" name="q32_3"class="input31" min="1" max="7"/>天的晚餐是外食</label><br>
-              <label><input type="radio" name="q32" />(4) 每星期有 1-2 天會吃晚餐，其中有 <input type="number" name="q32_4"class="input31" min="1" max="7"/>天的晚餐是外食</label><br>
-              <label><input type="radio" name="q32" />(5) 每個月有 1-3 天會吃晚餐，其中有 <input type="number" name="q32_5"class="input31" min="1" max="31"/>天的晚餐是外食</label><br>
-              <label><input type="radio" name="q32" />(6) 幾乎都不吃晚餐 </label><br>
+            <table class="table table-striped">
+              <tr><td><input type="radio" name="q32" id="q32_1"/></td><td><label for="q32_1">(1) 幾乎每天都吃晚餐，其中有 <input type="number" name="q32_1" class="input31" min="1" max="7" style="margin-bottom: 0;"/>天的晚餐是外食</label></td></tr>
+              <tr><td><input type="radio" name="q32" id="q32_2"/></td><td><label for="q32_2">(2) 每星期有 5-6 天會吃晚餐，其中有 <input type="number" name="q32_2"class="input31" min="1" max="7" style="margin-bottom: 0;"/>天的晚餐是外食</label></td></tr>
+              <tr><td><input type="radio" name="q32" id="q32_3"/></td><td><label for="q32_3">(3) 每星期有 3-4 天會吃晚餐，其中有 <input type="number" name="q32_3"class="input31" min="1" max="7" style="margin-bottom: 0;"/>天的晚餐是外食</label></td></tr>
+              <tr><td><input type="radio" name="q32" id="q32_4"/></td><td><label for="q32_4">(4) 每星期有 1-2 天會吃晚餐，其中有 <input type="number" name="q32_4"class="input31" min="1" max="7" style="margin-bottom: 0;"/>天的晚餐是外食</label></td></tr>
+              <tr><td><input type="radio" name="q32" id="q32_5"/></td><td><label for="q32_5">(5) 每個月有 1-3 天會吃晚餐，其中有 <input type="number" name="q32_5"class="input31" min="1" max="31" style="margin-bottom: 0;"/>天的晚餐是外食</label></td></tr>
+              <tr><td><input type="radio" name="q32" id="q32_6"/></td><td><label for="q32_6">(6) 幾乎都不吃晚餐</label> <br>
+              </table>
               <input type="button" name="previous" class="previous action-button" value="previous" />
               <input type="button" name="next" class="next action-button 32btn" value="Next" disabled='true'/>
           </fieldset>
+
           <!-- 33-34 -->
           <fieldset>
             <h2 class="fs-title h2style">以下33-34題想請問您飲食中的用油情形，以一個排骨便當為例，如果主菜是炸排骨，另有三格炒的配菜，計算時炸的菜餚計 1 道，炒或燴的菜餚計 3 道。</h2><br>
@@ -613,89 +623,65 @@
               <label class="ps">（包含所有炒或燴的菜餚與炒飯、炒麵等）</label></h2>
               <label><input type="radio" name="q35"  onclick="close35()"/>(1)每餐都為外食，沒有在家用油烹調 </label></br>
               <label><input type="radio" name="q35"  onclick="open35()"/>(2) 家中最常用的三種油為： </label></br>
-              <select name="q35_select_01" id="" class="select35_1" style="display: none;">
-                <option value="">(0)無</option>
-                <option value="">(1)沙拉油</option>
-                <option value="">(2)調和油</option>
-                <option value="">(3)葵花油</option>
-                <option value="">(4)橄欖油</option>
-                <option value="">(5)麻油</option>
-                <option value="">(6)豬油</option>
-                <option value="">(7)花生油</option>
-                <option value="">(8)芥花油</option>
-                <option value="">(9)葡萄籽油</option>
-                <option value="">(10)茶油</option>
-                <option value="">(11)蔬菜油</option>
-                <option value="">(12)雞油</option>
-                <option value="">(13)椰子油</option>
-                <option value="">(14)玉米油</option>
-                <option value="">(15)香油</option>
-                <option value="">(16)美奶滋；沙拉醬</option>
-                <option value="">(17)油醋沙拉醬</option>
-                <option value="">(18)奶油</option>
-                <option value="">(19)乳瑪琳; 人造奶油</option>
-                <option value="">(20)酥油</option>
-                <option value="">(21)辣椒油</option>
-                <option value="">(22)蔥油</option>
-                <option value="">(23)鵝油</option>
-                <option value="">(24)玄米油</option>
-                <option value="">(25)不知名的油</option>
+              <select name="q35_select_01" id="" class="select35_1 custom-select" style="display: none;">
+                <option value="none">無</option>
+                <option value="K410900">沙拉油</option>
+                <option value="K4220AA">調和油</option>
+                <option value="K411100">葵花油</option>
+                <option value="K410400">橄欖油</option>
+                <option value="K4118AB">麻油</option>
+                <option value="K420100">豬油</option>
+                <option value="K410800">花生油</option>
+                <option value="K4213BB">芥花油</option>
+                <option value="K412600">葡萄籽油</option>
+                <option value="K4122AB">茶油</option>
+                <option value="K412000">蔬菜油</option>
+                <option value="K4211AE">雞油</option>
+                <option value="K410700">椰子油</option>
+                <option value="K410100">玉米油</option>
+                <option value="K4211AF">鵝油</option>
+                <option value="K42160A">玄米油</option>
+                <option value="K400000">不知名的油</option>
               </select><br>
-              <select name="q35_select_02" id="" class="select35_2" style="display: none;">
-                <option value="">(0)無</option>
-                <option value="">(1)沙拉油</option>
-                <option value="">(2)調和油</option>
-                <option value="">(3)葵花油</option>
-                <option value="">(4)橄欖油</option>
-                <option value="">(5)麻油</option>
-                <option value="">(6)豬油</option>
-                <option value="">(7)花生油</option>
-                <option value="">(8)芥花油</option>
-                <option value="">(9)葡萄籽油</option>
-                <option value="">(10)茶油</option>
-                <option value="">(11)蔬菜油</option>
-                <option value="">(12)雞油</option>
-                <option value="">(13)椰子油</option>
-                <option value="">(14)玉米油</option>
-                <option value="">(15)香油</option>
-                <option value="">(16)美奶滋；沙拉醬</option>
-                <option value="">(17)油醋沙拉醬</option>
-                <option value="">(18)奶油</option>
-                <option value="">(19)乳瑪琳; 人造奶油</option>
-                <option value="">(20)酥油</option>
-                <option value="">(21)辣椒油</option>
-                <option value="">(22)蔥油</option>
-                <option value="">(23)鵝油</option>
-                <option value="">(24)玄米油</option>
-                <option value="">(25)不知名的油</option>
+              <select name="q35_select_02" id="" class="select35_2 custom-select" style="display: none;">
+                <option value="none">無</option>
+                <option value="K410900">沙拉油</option>
+                <option value="K4220AA">調和油</option>
+                <option value="K411100">葵花油</option>
+                <option value="K410400">橄欖油</option>
+                <option value="K4118AB">麻油</option>
+                <option value="K420100">豬油</option>
+                <option value="K410800">花生油</option>
+                <option value="K4213BB">芥花油</option>
+                <option value="K412600">葡萄籽油</option>
+                <option value="K4122AB">茶油</option>
+                <option value="K412000">蔬菜油</option>
+                <option value="K4211AE">雞油</option>
+                <option value="K410700">椰子油</option>
+                <option value="K410100">玉米油</option>
+                <option value="K4211AF">鵝油</option>
+                <option value="K42160A">玄米油</option>
+                <option value="K400000">不知名的油</option>
               </select><br>
-              <select name="q35_select_03" id="" class="select35_3" style="display: none;">
-                <option value="">(0)無</option>
-                <option value="">(1)沙拉油</option>
-                <option value="">(2)調和油</option>
-                <option value="">(3)葵花油</option>
-                <option value="">(4)橄欖油</option>
-                <option value="">(5)麻油</option>
-                <option value="">(6)豬油</option>
-                <option value="">(7)花生油</option>
-                <option value="">(8)芥花油</option>
-                <option value="">(9)葡萄籽油</option>
-                <option value="">(10)茶油</option>
-                <option value="">(11)蔬菜油</option>
-                <option value="">(12)雞油</option>
-                <option value="">(13)椰子油</option>
-                <option value="">(14)玉米油</option>
-                <option value="">(15)香油</option>
-                <option value="">(16)美奶滋；沙拉醬</option>
-                <option value="">(17)油醋沙拉醬</option>
-                <option value="">(18)奶油</option>
-                <option value="">(19)乳瑪琳; 人造奶油</option>
-                <option value="">(20)酥油</option>
-                <option value="">(21)辣椒油</option>
-                <option value="">(22)蔥油</option>
-                <option value="">(23)鵝油</option>
-                <option value="">(24)玄米油</option>
-                <option value="">(25)不知名的油</option>
+              <select name="q35_select_03" id="" class="select35_3 custom-select" style="display: none;">
+                <option value="none">無</option>
+                <option value="K410900">沙拉油</option>
+                <option value="K4220AA">調和油</option>
+                <option value="K411100">葵花油</option>
+                <option value="K410400">橄欖油</option>
+                <option value="K4118AB">麻油</option>
+                <option value="K420100">豬油</option>
+                <option value="K410800">花生油</option>
+                <option value="K4213BB">芥花油</option>
+                <option value="K412600">葡萄籽油</option>
+                <option value="K4122AB">茶油</option>
+                <option value="K412000">蔬菜油</option>
+                <option value="K4211AE">雞油</option>
+                <option value="K410700">椰子油</option>
+                <option value="K410100">玉米油</option>
+                <option value="K4211AF">鵝油</option>
+                <option value="K42160A">玄米油</option>
+                <option value="K400000">不知名的油</option>
               </select><br>
               <input type="button" name="previous" class="previous action-button" value="previous" />
               <input type="button" name="next" class="next action-button 35btn" value="Next" disabled='true'/>
@@ -706,7 +692,7 @@
               <label class="ps">（包含所有炒或燴的菜餚與炒飯、炒麵等）</label></h2>
               <label><input type="radio" name="q36"  onclick="close36()"/>(1)每餐都為外食，沒有在家用鹽烹調</label></br>
               <label><input type="radio" name="q36"  onclick="open36()"/>(2)家中最常用的三種鹽為： </label></br>
-              <select name="q36_select_01" id="" class="select36_1" style="display: none;">
+              <select name="q36_select_01" id="" class="select36_1 custom-select" style="display: none;">
                 <option value="">(0)無</option>
                 <option value="">(1)精鹽</option>
                 <option value="">(2)健康美味鹽</option>
@@ -716,7 +702,7 @@
                 <option value="">(6)湖鹽</option>
                 <option value="">(7)不知名的鹽</option>
               </select><br>
-              <select name="q36_select_02" id="" class="select36_2" style="display: none;">
+              <select name="q36_select_02" id="" class="select36_2 custom-select" style="display: none;">
                 <option value="">(0)無</option>
                 <option value="">(1)精鹽</option>
                 <option value="">(2)健康美味鹽</option>
@@ -726,7 +712,7 @@
                 <option value="">(6)湖鹽</option>
                 <option value="">(7)不知名的鹽</option>
               </select><br>
-              <select name="q36_select_03" id="" class="select36_3" style="display: none;">
+              <select name="q36_select_03" id="" class="select36_3 custom-select" style="display: none;">
                 <option value="">(0)無</option>
                 <option value="">(1)精鹽</option>
                 <option value="">(2)健康美味鹽</option>
@@ -740,8 +726,11 @@
               <input type="button" name="previous" class="previous action-button" value="previous" />
               <input type="button" name="next" class="next action-button 36btn" value="Next" disabled='true'/>
         </fieldset>
-
-
+<!-- final -->
+        <fieldset style="background-color: #63b6b5;">
+          <label class="final_content"><p class="final_p">非常感謝您填寫問卷</p></label><br>
+          <!-- <input type="button" name="next" class="next action-button 1btn" value="Next" disabled='true'/> -->
+        </fieldset>
     
           </form>
         </div>
@@ -749,6 +738,10 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/i18n/defaults-*.min.js"></script> -->
+
     <script src="all.js"></script>
     <script src="select.js"></script>
 </body>

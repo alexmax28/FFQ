@@ -61,14 +61,15 @@ body {
 /*buttons*/
 #msform .action-button {
 	width: 150px;
-	background: #27AE60;
+	background: #63b6b5;
 	font-weight: bold;
 	color: white;
 	border: 0 none;
-	border-radius: 1px;
+	/* border-radius: 1px; */
 	cursor: pointer;
 	padding: 10px 5px;
 	margin: 20px 5px;
+	border-radius: .25rem;
 }
 #msform .action-button:hover, #msform .action-button:focus {
 	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
@@ -142,6 +143,7 @@ body {
 	padding: 20px;
 	/* color:white; */
 	border: 1px solid #666;
+	font-weight: bold;
 }
 .ps{
 	font-size: 14px;
@@ -177,9 +179,25 @@ label>span{
 }
 .table-striped tbody tr:nth-of-type(odd) {
 	/* background-color: rgba(0,0,0,.05); */
-	background-color: white;
+	/* background-color: white; */
 }
 
+.final_content{
+	height: 15em;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0.5em;
+	background-color: #63b6b5;
+	color: #ffffff;
+
+}
+.final_p{
+	font-size: 2em;
+	
+
+}
 
 
 @keyframes show{

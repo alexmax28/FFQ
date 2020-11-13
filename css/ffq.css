@@ -61,14 +61,15 @@ body {
 /*buttons*/
 #msform .action-button {
 	width: 150px;
-	background: #27AE60;
+	background: #63b6b5;
 	font-weight: bold;
 	color: white;
 	border: 0 none;
-	border-radius: 1px;
+	/* border-radius: 1px; */
 	cursor: pointer;
 	padding: 10px 5px;
 	margin: 20px 5px;
+	border-radius: .25rem;
 }
 #msform .action-button:hover, #msform .action-button:focus {
 	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
@@ -161,17 +162,25 @@ label>span{
 	color:red;
 	font-size: 8px;
 }
-tr{
-	border-bottom: solid 1px #000000;
-}
-
-
-
 .jump2a,.jump3a,.jump4a,.jump11a,.jump12a,.jump15a,.jump18a,.jump21a,.jump22a,.jump24a,.jump25a,.jump26a{
 	display:none;
 	animation-name:show;
 	animation-duration:3s;
 }
+.table29{
+	border: 2px solid #000;
+}
+.tr29{
+	border-bottom: 2px solid #000;
+}
+#app{
+	background: #f1f1f1;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+	/* background-color: rgba(0,0,0,.05); */
+	background-color: white;
+}
+
 
 
 @keyframes show{
