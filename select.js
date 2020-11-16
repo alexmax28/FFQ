@@ -25,38 +25,65 @@ $("input[name='q02']").click(function(){
     $('.2btn').attr('disabled',false);
    }
 });
-$(".q02c").click(function(){
-    var q02a =$(".q02a").val();
-    var q02b =$(".q02b").val();
-    var q02c =$(".q02c").val();
-    var judge =(q02a !=='' && q02b !=='' && q02c !=='')
-    console.log(judge);
-    if(judge){
-        $('.2btn').attr('disabled',false);
-    }
+
+// 2a*************************************
+$("input[name='q02a']").click(function(){
+    var q02a = $("input[name=q02a]:checked");
+    var q02b = $("input[name=q02b]:checked");
+    var q02c = $("input[name=q02c]:checked");
+
+    if(q02b.val() && q02c.val() !==""){
+    $('.2btn').attr('disabled',false);
+   }
+});
+
+$("input[name='q02b']").click(function(){
+    var q02a = $("input[name=q02a]:checked");
+    var q02c = $("input[name=q02c]:checked");
+    
+
+    if(q02a.val() && q02c.val() !== "undefined"){
+    $('.2btn').attr('disabled',false);
+   }
+});
+
+$("input[name='q02c']").click(function(){
+    var q02a = $("input[name=q02a]:checked");
+    var q02b = $("input[name=q02b]:checked");
+    var q02c = $("input[name=q02c]:checked");
+
+    if(q02a.val() && q02b.val() !==""){
+    $('.2btn').attr('disabled',false);
+   }
 });
 
 
 
 
-
+// 11/14做到這
 $("input[name='q03']").click(function(){
     var qa1val = $("input[name=q03]:checked");
     if(qa1val.val() =='1'){
     $('.3btn').attr('disabled',false);
    }
 });
-$(".q03b").click(function(){
-    console.log(q03a);
-    var q03a =$(".q03a").val();
-    var q03b =$(".q03b").val();
-    if((q03a !=='' && q03b !=='')){
-        $('.3btn').attr('disabled',false);
-    }
+$("input[name='q03b']").click(function(){
+    var q03a = $("input[name=q03a]:checked");
+    var q03b = $("input[name=q03b]:checked");
+
+    if(q03a.val() && q03b.val() !==""){
+    $('.3btn').attr('disabled',false);
+   }
 });
 
 $("input[name='q04']").click(function(){
     var qa1val = $("input[name=q04]:checked");
+    if(qa1val.val() =='1'){
+    $('.4btn').attr('disabled',false);
+   }
+});
+$("input[name='q04a']").click(function(){
+    var qa1val = $("input[name=q04a]:checked");
     if(qa1val.val() !==''){
     $('.4btn').attr('disabled',false);
    }
@@ -98,21 +125,33 @@ $("input[name='q10']").click(function(){
     $('.10btn').attr('disabled',false);
    }
 });
+
 $("input[name='q11']").click(function(){
     var qa1val = $("input[name=q11]:checked");
+    if(qa1val.val() =='1'){
+    $('.11btn').attr('disabled',false);
+   }
+});
+$("input[name='q11a']").click(function(){
+    var qa1val = $("input[name=q11a]:checked");
     if(qa1val.val() !==''){
     $('.11btn').attr('disabled',false);
    }
 });
 
-
-
 $("input[name='q12']").click(function(){
     var qa1val = $("input[name=q12]:checked");
+    if(qa1val.val() =='1'){
+    $('.12btn').attr('disabled',false);
+   }
+});
+$("input[name='q12a']").click(function(){
+    var qa1val = $("input[name=q12a]:checked");
     if(qa1val.val() !==''){
     $('.12btn').attr('disabled',false);
    }
 });
+
 $("input[name='q13']").click(function(){
     var qa1val = $("input[name=q13]:checked");
     if(qa1val.val() !==''){
@@ -192,6 +231,12 @@ $("input[name='q20']").click(function(){
 
 $("input[name='q21']").click(function(){
     var qa1val = $("input[name=q21]:checked");
+    if(qa1val.val() =='4'){
+    $('.21btn').attr('disabled',false);
+   }
+});
+$("input[name='q21a']").click(function(){
+    var qa1val = $("input[name=q21a]:checked");
     if(qa1val.val() !==''){
     $('.21btn').attr('disabled',false);
    }
@@ -199,6 +244,12 @@ $("input[name='q21']").click(function(){
 
 $("input[name='q22']").click(function(){
     var qa1val = $("input[name=q22]:checked");
+    if(qa1val.val() =='4'){
+    $('.22btn').attr('disabled',false);
+   }
+});
+$("input[name='q22a']").click(function(){
+    var qa1val = $("input[name=q22a]:checked");
     if(qa1val.val() !==''){
     $('.22btn').attr('disabled',false);
    }
@@ -213,6 +264,12 @@ $("input[name='q23']").click(function(){
 
 $("input[name='q24']").click(function(){
     var qa1val = $("input[name=q24]:checked");
+    if(qa1val.val() =='4'){
+    $('.24btn').attr('disabled',false);
+   }
+});
+$("input[name='q24a']").click(function(){
+    var qa1val = $("input[name=q24a]:checked");
     if(qa1val.val() !==''){
     $('.24btn').attr('disabled',false);
    }
@@ -220,6 +277,12 @@ $("input[name='q24']").click(function(){
 
 $("input[name='q25']").click(function(){
     var qa1val = $("input[name=q25]:checked");
+    if(qa1val.val() =='4'){
+    $('.25btn').attr('disabled',false);
+   }
+});
+$("input[name='q25a']").click(function(){
+    var qa1val = $("input[name=q25a]:checked");
     if(qa1val.val() !==''){
     $('.25btn').attr('disabled',false);
    }
@@ -227,6 +290,12 @@ $("input[name='q25']").click(function(){
 
 $("input[name='q26']").click(function(){
     var qa1val = $("input[name=q26]:checked");
+    if(qa1val.val() =='4'){
+    $('.26btn').attr('disabled',false);
+   }
+});
+$("input[name='q26a']").click(function(){
+    var qa1val = $("input[name=q26a]:checked");
     if(qa1val.val() !==''){
     $('.26btn').attr('disabled',false);
    }
